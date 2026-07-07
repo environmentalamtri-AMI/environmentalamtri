@@ -787,3 +787,14 @@ button{font:inherit}
 .site-header.scrolled .main-nav .nav-input-link:hover{
   color:var(--orange)!important;
 }
+
+
+/* =========================================================
+   Remove "Tentang 1DEA" eyebrow in intro section (2026-07-07)
+   ========================================================= */
+.intro .section-heading > .eyebrow{
+  display:none !important;
+}
+.intro .section-heading{
+  padding-top:0 !important;
+}
