@@ -49,7 +49,7 @@ switchButtons.forEach(button => button.addEventListener('click', () => {
   button.classList.add('active');
 }));
 
-// Hero module slider — autoplay 2.6 seconds
+// Hero module slider — autoplay 4.6 seconds with smooth crossfade
 (() => {
   const slider = document.querySelector('.hero-module-slider');
   if (!slider) return;
@@ -61,7 +61,7 @@ switchButtons.forEach(button => button.addEventListener('click', () => {
   const currentLabel = slider.querySelector('[data-slider-current]');
   const progress = slider.querySelector('.slider-progress i');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const interval = Number(slider.dataset.autoplay || 2600);
+  const interval = Number(slider.dataset.autoplay || 4600);
   let current = 0;
   let timer = null;
   let pointerStartX = null;
