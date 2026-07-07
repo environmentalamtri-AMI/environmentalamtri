@@ -1,259 +1,232 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="1DEA — One Data Environment Alamtri, pusat data lingkungan terpadu PT Maruwai Coal dan PT Lahai Coal." />
-  <meta name="theme-color" content="#003f52" />
-  <title>1DEA — One Data Environment Alamtri</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="1DEA — One Data Environment Alamtri, pusat data lingkungan terpadu PT Maruwai Coal dan PT Lahai Coal." name="description"/>
+<meta content="#003f52" name="theme-color"/>
+<title>1DEA — One Data Environment Alamtri</title>
+<link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <div class="container nav-shell">
-      <a class="brand" href="#top" aria-label="1DEA beranda">
-        <span class="brand-symbol" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
-        <span class="brand-copy"><strong>1DEA</strong><small>One Data Environment Alamtri</small></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
-        <i></i><i></i><i></i>
-      </button>
-
-      <nav class="main-nav" aria-label="Navigasi utama">
-        <a href="#tentang">Tentang</a>
-        <a href="#modul">Modul</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#roadmap">Roadmap</a>
-      </nav>
-
-      <a class="nav-cta" href="dashboard.html">
+<div aria-hidden="true" class="grain"></div>
+<header class="site-header" id="top">
+<div class="container nav-shell">
+<a aria-label="1DEA beranda" class="brand" href="#top"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="assets/alamtri-geo-logo.png" width="184"/></span></a>
+<button aria-expanded="false" aria-label="Buka menu" class="menu-toggle" type="button">
+<i></i><i></i><i></i>
+</button>
+<nav aria-label="Navigasi utama" class="main-nav">
+<a href="#tentang">Tentang</a>
+<a href="#modul">Modul</a>
+<a href="#workflow">Workflow</a>
+<a href="#roadmap">Roadmap</a>
+</nav>
+<a class="nav-cta" href="dashboard.html">
         Dashboard <span>↗</span>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <div class="hero-glow glow-a" aria-hidden="true"></div>
-      <div class="hero-glow glow-b" aria-hidden="true"></div>
-      <div class="petal-stack hero-petals" aria-hidden="true">
-        <i class="petal petal-mint"></i><i class="petal petal-orange"></i><i class="petal petal-blue"></i>
-      </div>
-
-      <div class="container hero-layout">
-        <div class="hero-copy reveal">
-          <div class="hero-kicker"><span></span> Environmental intelligence platform</div>
-          <h1>Data lingkungan.<br><em>Terhubung.</em><br>Lebih bermakna.</h1>
-          <p>1DEA menyatukan data lingkungan PT Maruwai Coal dan PT Lahai Coal dalam satu pusat informasi—ringkas, visual, dan siap digunakan untuk pengambilan keputusan.</p>
-          <div class="hero-actions">
-            <a class="btn btn-orange" href="dashboard.html">Buka Dashboard <span>↗</span></a>
-            <a class="btn btn-ghost" href="#modul">Jelajahi Modul <span>↓</span></a>
-          </div>
-          <div class="hero-proof">
-            <div><strong data-count="2">2</strong><span>Perusahaan</span></div>
-            <div><strong data-count="5">5</strong><span>Basis data</span></div>
-            <div><strong data-count="4">4</strong><span>Area pengelolaan</span></div>
-          </div>
-        </div>
-
-        <div class="hero-dashboard reveal delay-1" aria-label="Pratinjau dashboard 1DEA">
-          <div class="dashboard-window">
-            <div class="window-bar">
-              <div class="window-dots"><i></i><i></i><i></i></div>
-              <span>Environmental Overview</span>
-              <b><i></i> Live</b>
-            </div>
-            <div class="dashboard-main">
-              <aside class="dash-side">
-                <div class="mini-logo">1D</div>
-                <button class="active" aria-label="Overview">⌂</button>
-                <button aria-label="Land">◇</button>
-                <button aria-label="Water">≈</button>
-                <button aria-label="B3">▣</button>
-                <button aria-label="Biodiversity">✦</button>
-              </aside>
-              <div class="dash-content">
-                <div class="dash-head">
-                  <div><small>ONE DATA ENVIRONMENT</small><h2>Good morning, Enviro Team.</h2></div>
-                  <div class="company-switch"><button class="active">MC</button><button>LC</button></div>
-                </div>
-                <div class="metric-row">
-                  <article><span>Land & Reclamation</span><strong>Updated</strong><small>Monthly reporting</small></article>
-                  <article><span>Acid Mine Drainage</span><strong>Daily</strong><small>16.00 WIB</small></article>
-                  <article><span>Waste B3</span><strong>100%</strong><small>Balance monitored</small></article>
-                </div>
-                <div class="dash-grid">
-                  <article class="chart-card">
-                    <div class="card-title"><div><small>RECLAMATION</small><b>Plan vs Realization</b></div><span>2025</span></div>
-                    <div class="bars" aria-hidden="true">
-                      <i style="--a:46%;--b:58%"></i><i style="--a:68%;--b:76%"></i><i style="--a:52%;--b:65%"></i><i style="--a:78%;--b:88%"></i><i style="--a:64%;--b:74%"></i><i style="--a:82%;--b:92%"></i>
-                    </div>
-                    <div class="chart-legend"><span><i></i> Rencana</span><span><i></i> Realisasi</span></div>
-                  </article>
-                  <article class="ndvi-card">
-                    <div class="card-title"><div><small>NDVI RECLAMATION</small><b>Vegetation profile</b></div><span>Q4</span></div>
-                    <div class="ndvi-map" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b>NDVI</b></div>
-                    <div class="ndvi-scale"><span>Low</span><i></i><span>High</span></div>
-                  </article>
-                  <article class="water-card">
-                    <div class="card-title"><div><small>WATER QUALITY</small><b>Settling pond status</b></div><span>Today</span></div>
-                    <div class="water-list">
-                      <div><span>SP LM01</span><b>pH 6.4</b><i class="ok">Comply</i></div>
-                      <div><span>SP LM02</span><b>pH 6.6</b><i class="ok">Comply</i></div>
-                      <div><span>SP CHPP</span><b>pH 6.5</b><i class="ok">Comply</i></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="float-card float-ndvi"><span>NDVI</span><b>Vegetation Health</b><small>Spatial monitoring</small></div>
-          <div class="float-card float-update"><i></i><div><b>Data synchronized</b><small>Google Sheets → Looker Studio</small></div></div>
-        </div>
-      </div>
-
-      <div class="scroll-hint"><span></span> Scroll to explore</div>
-    </section>
-
-    <section class="intro section" id="tentang">
-      <div class="container intro-grid">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Tentang 1DEA</span>
-          <h2>Satu pusat data untuk pengelolaan lingkungan yang <em>lebih terpadu.</em></h2>
-        </div>
-        <div class="intro-copy reveal delay-1">
-          <p>1DEA adalah pusat data lingkungan terpadu untuk PT Maruwai Coal dan PT Lahai Coal. Platform ini menghubungkan database, visualisasi, dan pelaporan dalam satu ekosistem web yang dapat diakses melalui komputer, tablet, dan ponsel.</p>
-          <div class="intro-tags"><span>Web-based</span><span>Multi-device</span><span>Data visualization</span><span>Centralized reporting</span></div>
-        </div>
-      </div>
-
-      <div class="container feature-strip reveal">
-        <article><div class="feature-icon land">⌁</div><div><small>01</small><h3>Data Terpusat</h3><p>Database lingkungan PT Maruwai Coal dan PT Lahai Coal dalam satu portal.</p></div></article>
-        <article><div class="feature-icon visual">◒</div><div><small>02</small><h3>Visual dan Ringkas</h3><p>Informasi teknis diubah menjadi dashboard yang lebih mudah dipahami.</p></div></article>
-        <article><div class="feature-icon report">✓</div><div><small>03</small><h3>Pelaporan Konsisten</h3><p>Jadwal pelaporan harian, bulanan, dan triwulanan lebih terstruktur.</p></div></article>
-      </div>
-    </section>
-
-    <section class="modules section" id="modul">
-      <div class="container section-top reveal">
-        <div><span class="eyebrow light">Modul Utama</span><h2>Environmental monitoring,<br><em>dalam satu ekosistem.</em></h2></div>
-        <p>Setiap modul dirancang untuk mengubah data operasional menjadi informasi yang cepat dibaca dan mudah ditindaklanjuti.</p>
-      </div>
-
-      <div class="container module-grid">
-        <a class="module-card large orange reveal" href="modules/bukaan-lahan-reklamasi.html">
-          <div class="module-number">01</div>
-          <div class="module-art terrain"><i></i><i></i><i></i><b></b></div>
-          <div class="module-copy"><span>LAND MANAGEMENT</span><h3>Bukaan Lahan<br>& Reklamasi</h3><p>Kumulatif bukaan lahan, progress reklamasi, penggunaan lahan, serta rencana versus realisasi.</p><small>Pelaporan: setiap tanggal 7</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-
-        <a class="module-card teal reveal delay-1" href="modules/air-asam-tambang.html">
-          <div class="module-number">02</div>
-          <div class="module-icon water-drop">≈</div>
-          <div class="module-copy"><span>WATER MANAGEMENT</span><h3>Air Asam Tambang</h3><p>Kualitas air terolah, penggunaan chemical, debit, biaya, dan tren fortnightly.</p><small>Pelaporan: setiap hari 16.00 WIB</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-
-        <a class="module-card mint reveal" href="modules/limbah-b3.html">
-          <div class="module-number">03</div>
-          <div class="module-icon waste-icon">▣</div>
-          <div class="module-copy"><span>HAZARDOUS WASTE</span><h3>Pengelolaan Limbah B3</h3><p>Neraca bulanan, triwulanan, tahunan, timbulan limbah, dan kinerja pengelolaan.</p><small>Pelaporan: setiap tanggal 7</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-
-        <a class="module-card dark reveal delay-1" href="modules/ndvi-reklamasi.html">
-          <div class="module-number">04</div>
-          <div class="module-icon ndvi-icon">◫</div>
-          <div class="module-copy"><span>SPATIAL MONITORING</span><h3>NDVI Reklamasi</h3><p>Indeks vegetasi, kesehatan dan kerapatan, cover crop, serta peta historis spasial.</p><small>Pelaporan: setiap triwulan</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-
-        <a class="module-card biodiversity reveal" href="modules/keanekaragaman-hayati.html">
-          <div class="module-number">05</div>
-          <div class="module-art leaf-art"><i></i><i></i><i></i></div>
-          <div class="module-copy"><span>BIODIVERSITY</span><h3>Keanekaragaman Hayati</h3><p>Arboretum, flora dan fauna, penangkaran rusa sambar, serta destilasi minyak kayu putih.</p><small>Informasi program biodiversity</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-
-        <a class="module-card database reveal delay-1" href="database.html">
-          <div class="module-number">06</div>
-          <div class="module-icon db-icon">◉</div>
-          <div class="module-copy"><span>DATA CENTER</span><h3>Database Lingkungan</h3><p>Akses input database bukaan lahan, AAT, limbah B3, NDVI, dan penyulingan kayu putih.</p><small>PT Maruwai Coal & PT Lahai Coal</small></div>
-          <b class="module-arrow">↗</b>
-        </a>
-      </div>
-    </section>
-
-    <section class="workflow section" id="workflow">
-      <div class="container workflow-layout">
-        <div class="workflow-copy reveal">
-          <span class="eyebrow">Cara Kerja 1DEA</span>
-          <h2>Dari data lapangan menjadi <em>informasi manajemen.</em></h2>
-          <p>Alur kerja dibuat sederhana dan konsisten: person in charge mengelola input, data divisualisasikan, seluruh informasi diintegrasikan pada website, kemudian laporan disampaikan kepada pengguna.</p>
-          <a class="text-link" href="database.html">Buka pusat database <span>↗</span></a>
-        </div>
-        <div class="workflow-flow reveal delay-1">
-          <article class="flow-step active"><span>01</span><div class="flow-icon">✎</div><div><small>INPUT</small><h3>Person in Charge</h3><p>Pengumpulan dan pembaruan data melalui Google Spreadsheet.</p></div></article>
-          <article class="flow-step"><span>02</span><div class="flow-icon">▥</div><div><small>VISUALIZE</small><h3>Looker Studio</h3><p>Data diolah menjadi dashboard, tren, peta, dan indikator kinerja.</p></div></article>
-          <article class="flow-step"><span>03</span><div class="flow-icon">◎</div><div><small>INTEGRATE</small><h3>Website 1DEA</h3><p>Seluruh dashboard dan database disatukan dalam satu portal.</p></div></article>
-          <article class="flow-step"><span>04</span><div class="flow-icon">✓</div><div><small>REPORT</small><h3>User Reporting</h3><p>Informasi disampaikan melalui laporan sesuai frekuensi pemantauan.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="coverage section">
-      <div class="container coverage-card reveal">
-        <div class="coverage-copy"><span class="eyebrow light">Platform Coverage</span><h2>Dibangun untuk dua operasi.<br><em>Satu standar data.</em></h2><p>1DEA menghubungkan informasi lingkungan PT Maruwai Coal dan PT Lahai Coal dalam struktur monitoring yang konsisten.</p></div>
-        <div class="company-cards">
-          <article><span>MC</span><div><small>PT</small><h3>Maruwai Coal</h3><p>Land • Water • B3 • NDVI • Biodiversity</p></div><b>↗</b></article>
-          <article><span>LC</span><div><small>PT</small><h3>Lahai Coal</h3><p>Land • Water • B3 • NDVI • Biodiversity</p></div><b>↗</b></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="roadmap section" id="roadmap">
-      <div class="container section-heading centered reveal">
-        <span class="eyebrow">1DEA Development</span>
-        <h2>Platform yang terus <em>bertumbuh.</em></h2>
-        <p>Pengembangan 1DEA berikutnya memperluas integrasi data untuk mendukung pengelolaan lingkungan dan keberlanjutan yang lebih komprehensif.</p>
-      </div>
-      <div class="container roadmap-grid">
-        <article class="roadmap-card reveal"><div class="roadmap-icon emission">≋</div><span>01</span><h3>Air Emission</h3><p>Integrasi data emisi udara ke dalam sistem monitoring digital.</p><div class="timeline"><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Apr</small></article>
-        <article class="roadmap-card reveal delay-1"><div class="roadmap-icon domestic">⌂</div><span>02</span><h3>Domestic Waste</h3><p>Pengembangan database dan visualisasi pengelolaan sampah domestik.</p><div class="timeline six"><i></i><i></i><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Jun</small></article>
-        <article class="roadmap-card reveal delay-2"><div class="roadmap-icon sustain">✦</div><span>03</span><h3>Sustainability Report</h3><p>Integrasi informasi keberlanjutan menjadi dashboard yang terstruktur.</p><div class="timeline eight"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Aug</small></article>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container cta-shell reveal">
-        <div class="petal-stack cta-petals" aria-hidden="true"><i class="petal petal-mint"></i><i class="petal petal-orange"></i><i class="petal petal-blue"></i></div>
-        <div><span class="eyebrow light">ONE DATA ENVIRONMENT ALAMTRI</span><h2>Satu data.<br>Satu dashboard.<br><em>Keputusan lebih cepat.</em></h2></div>
-        <div class="cta-side"><p>Akses seluruh dashboard dan database lingkungan melalui platform 1DEA.</p><a class="btn btn-orange" href="dashboard.html">Buka Dashboard 1DEA <span>↗</span></a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <div class="footer-brand">
-        <a class="brand" href="#top"><span class="brand-symbol"><span></span><span></span><span></span></span><span class="brand-copy"><strong>1DEA</strong><small>One Data Environment Alamtri</small></span></a>
-        <p>Pusat data lingkungan terpadu PT Maruwai Coal dan PT Lahai Coal.</p>
-      </div>
-      <div><h4>Platform</h4><a href="#tentang">Tentang 1DEA</a><a href="#modul">Modul</a><a href="#workflow">Workflow</a><a href="#roadmap">Roadmap</a></div>
-      <div><h4>Akses</h4><a href="dashboard.html">Dashboard ↗</a><a href="database.html">Database ↗</a><a href="modules/keanekaragaman-hayati.html">Biodiversity ↗</a></div>
-      <div class="alamtri-wordmark" aria-label="AlamTri geo"><strong>AlamTri</strong><span class="tri-mark"><i></i><i></i><i></i><i></i></span><small>geo</small></div>
-    </div>
-    <div class="container footer-bottom"><span>© 2026 1DEA — Environment Department</span><span>PT Maruwai Coal · PT Lahai Coal</span></div>
-  </footer>
-
-  <script src="script.js"></script>
+</a>
+</div>
+</header>
+<main>
+<section class="hero">
+<div aria-hidden="true" class="hero-grid-bg"></div>
+<div aria-hidden="true" class="hero-glow glow-a"></div>
+<div aria-hidden="true" class="hero-glow glow-b"></div>
+<div aria-hidden="true" class="petal-stack hero-petals">
+<i class="petal petal-mint"></i><i class="petal petal-orange"></i><i class="petal petal-blue"></i>
+</div>
+<div class="container hero-layout">
+<div class="hero-copy reveal">
+<div class="hero-kicker"><span></span> Environmental intelligence platform</div>
+<h1>Data lingkungan.<br/><em>Terhubung.</em><br/>Lebih bermakna.</h1>
+<p>1DEA menyatukan data lingkungan PT Maruwai Coal dan PT Lahai Coal dalam satu pusat informasi—ringkas, visual, dan siap digunakan untuk pengambilan keputusan.</p>
+<div class="hero-actions">
+<a class="btn btn-orange" href="dashboard.html">Buka Dashboard <span>↗</span></a>
+<a class="btn btn-ghost" href="#modul">Jelajahi Modul <span>↓</span></a>
+</div>
+<div class="hero-proof">
+<div><strong data-count="2">2</strong><span>Perusahaan</span></div>
+<div><strong data-count="5">5</strong><span>Basis data</span></div>
+<div><strong data-count="4">4</strong><span>Area pengelolaan</span></div>
+</div>
+</div>
+<div aria-label="Pratinjau dashboard 1DEA" class="hero-dashboard reveal delay-1">
+<div class="dashboard-window">
+<div class="window-bar">
+<div class="window-dots"><i></i><i></i><i></i></div>
+<span>Environmental Overview</span>
+<b><i></i> Live</b>
+</div>
+<div class="dashboard-main">
+<aside class="dash-side">
+<div class="mini-logo">1D</div>
+<button aria-label="Overview" class="active">⌂</button>
+<button aria-label="Land">◇</button>
+<button aria-label="Water">≈</button>
+<button aria-label="B3">▣</button>
+<button aria-label="Biodiversity">✦</button>
+</aside>
+<div class="dash-content">
+<div class="dash-head">
+<div><small>ONE DATA ENVIRONMENT</small><h2>Good morning, Enviro Team.</h2></div>
+<div class="company-switch"><button class="active">MC</button><button>LC</button></div>
+</div>
+<div class="metric-row">
+<article><span>Land &amp; Reclamation</span><strong>Updated</strong><small>Monthly reporting</small></article>
+<article><span>Acid Mine Drainage</span><strong>Daily</strong><small>16.00 WIB</small></article>
+<article><span>Waste B3</span><strong>100%</strong><small>Balance monitored</small></article>
+</div>
+<div class="dash-grid">
+<article class="chart-card">
+<div class="card-title"><div><small>RECLAMATION</small><b>Plan vs Realization</b></div><span>2025</span></div>
+<div aria-hidden="true" class="bars">
+<i style="--a:46%;--b:58%"></i><i style="--a:68%;--b:76%"></i><i style="--a:52%;--b:65%"></i><i style="--a:78%;--b:88%"></i><i style="--a:64%;--b:74%"></i><i style="--a:82%;--b:92%"></i>
+</div>
+<div class="chart-legend"><span><i></i> Rencana</span><span><i></i> Realisasi</span></div>
+</article>
+<article class="ndvi-card">
+<div class="card-title"><div><small>NDVI RECLAMATION</small><b>Vegetation profile</b></div><span>Q4</span></div>
+<div aria-hidden="true" class="ndvi-map"><i></i><i></i><i></i><i></i><i></i><b>NDVI</b></div>
+<div class="ndvi-scale"><span>Low</span><i></i><span>High</span></div>
+</article>
+<article class="water-card">
+<div class="card-title"><div><small>WATER QUALITY</small><b>Settling pond status</b></div><span>Today</span></div>
+<div class="water-list">
+<div><span>SP LM01</span><b>pH 6.4</b><i class="ok">Comply</i></div>
+<div><span>SP LM02</span><b>pH 6.6</b><i class="ok">Comply</i></div>
+<div><span>SP CHPP</span><b>pH 6.5</b><i class="ok">Comply</i></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+<div class="float-card float-ndvi"><span>NDVI</span><b>Vegetation Health</b><small>Spatial monitoring</small></div>
+<div class="float-card float-update"><i></i><div><b>Data synchronized</b><small>Google Sheets → Looker Studio</small></div></div>
+</div>
+</div>
+<div class="scroll-hint"><span></span> Scroll to explore</div>
+</section>
+<section class="intro section" id="tentang">
+<div class="container intro-grid">
+<div class="section-heading reveal">
+<span class="eyebrow">Tentang 1DEA</span>
+<h2>Satu pusat data untuk pengelolaan lingkungan yang <em>lebih terpadu.</em></h2>
+</div>
+<div class="intro-copy reveal delay-1">
+<p>1DEA adalah pusat data lingkungan terpadu untuk PT Maruwai Coal dan PT Lahai Coal. Platform ini menghubungkan database, visualisasi, dan pelaporan dalam satu ekosistem web yang dapat diakses melalui komputer, tablet, dan ponsel.</p>
+<div class="intro-tags"><span>Web-based</span><span>Multi-device</span><span>Data visualization</span><span>Centralized reporting</span></div>
+</div>
+</div>
+<div class="container feature-strip reveal">
+<article><div class="feature-icon land">⌁</div><div><small>01</small><h3>Data Terpusat</h3><p>Database lingkungan PT Maruwai Coal dan PT Lahai Coal dalam satu portal.</p></div></article>
+<article><div class="feature-icon visual">◒</div><div><small>02</small><h3>Visual dan Ringkas</h3><p>Informasi teknis diubah menjadi dashboard yang lebih mudah dipahami.</p></div></article>
+<article><div class="feature-icon report">✓</div><div><small>03</small><h3>Pelaporan Konsisten</h3><p>Jadwal pelaporan harian, bulanan, dan triwulanan lebih terstruktur.</p></div></article>
+</div>
+</section>
+<section class="modules section" id="modul">
+<div class="container section-top reveal">
+<div><span class="eyebrow light">Modul Utama</span><h2>Environmental monitoring,<br/><em>dalam satu ekosistem.</em></h2></div>
+<p>Setiap modul dirancang untuk mengubah data operasional menjadi informasi yang cepat dibaca dan mudah ditindaklanjuti.</p>
+</div>
+<div class="container module-grid">
+<a class="module-card large orange reveal" href="modules/bukaan-lahan-reklamasi.html">
+<div class="module-number">01</div>
+<div class="module-art terrain"><i></i><i></i><i></i><b></b></div>
+<div class="module-copy"><span>LAND MANAGEMENT</span><h3>Bukaan Lahan<br/>&amp; Reklamasi</h3><p>Kumulatif bukaan lahan, progress reklamasi, penggunaan lahan, serta rencana versus realisasi.</p><small>Pelaporan: setiap tanggal 7</small></div>
+<b class="module-arrow">↗</b>
+</a>
+<a class="module-card teal reveal delay-1" href="modules/air-asam-tambang.html">
+<div class="module-number">02</div>
+<div class="module-icon water-drop">≈</div>
+<div class="module-copy"><span>WATER MANAGEMENT</span><h3>Air Asam Tambang</h3><p>Kualitas air terolah, penggunaan chemical, debit, biaya, dan tren fortnightly.</p><small>Pelaporan: setiap hari 16.00 WIB</small></div>
+<b class="module-arrow">↗</b>
+</a>
+<a class="module-card mint reveal" href="modules/limbah-b3.html">
+<div class="module-number">03</div>
+<div class="module-icon waste-icon">▣</div>
+<div class="module-copy"><span>HAZARDOUS WASTE</span><h3>Pengelolaan Limbah B3</h3><p>Neraca bulanan, triwulanan, tahunan, timbulan limbah, dan kinerja pengelolaan.</p><small>Pelaporan: setiap tanggal 7</small></div>
+<b class="module-arrow">↗</b>
+</a>
+<a class="module-card dark reveal delay-1" href="modules/ndvi-reklamasi.html">
+<div class="module-number">04</div>
+<div class="module-icon ndvi-icon">◫</div>
+<div class="module-copy"><span>SPATIAL MONITORING</span><h3>NDVI Reklamasi</h3><p>Indeks vegetasi, kesehatan dan kerapatan, cover crop, serta peta historis spasial.</p><small>Pelaporan: setiap triwulan</small></div>
+<b class="module-arrow">↗</b>
+</a>
+<a class="module-card biodiversity reveal" href="modules/keanekaragaman-hayati.html">
+<div class="module-number">05</div>
+<div class="module-art leaf-art"><i></i><i></i><i></i></div>
+<div class="module-copy"><span>BIODIVERSITY</span><h3>Keanekaragaman Hayati</h3><p>Arboretum, flora dan fauna, penangkaran rusa sambar, serta destilasi minyak kayu putih.</p><small>Informasi program biodiversity</small></div>
+<b class="module-arrow">↗</b>
+</a>
+<a class="module-card database reveal delay-1" href="database.html">
+<div class="module-number">06</div>
+<div class="module-icon db-icon">◉</div>
+<div class="module-copy"><span>DATA CENTER</span><h3>Database Lingkungan</h3><p>Akses input database bukaan lahan, AAT, limbah B3, NDVI, dan penyulingan kayu putih.</p><small>PT Maruwai Coal &amp; PT Lahai Coal</small></div>
+<b class="module-arrow">↗</b>
+</a>
+</div>
+</section>
+<section class="workflow section" id="workflow">
+<div class="container workflow-layout">
+<div class="workflow-copy reveal">
+<span class="eyebrow">Cara Kerja 1DEA</span>
+<h2>Dari data lapangan menjadi <em>informasi manajemen.</em></h2>
+<p>Alur kerja dibuat sederhana dan konsisten: person in charge mengelola input, data divisualisasikan, seluruh informasi diintegrasikan pada website, kemudian laporan disampaikan kepada pengguna.</p>
+<a class="text-link" href="database.html">Buka pusat database <span>↗</span></a>
+</div>
+<div class="workflow-flow reveal delay-1">
+<article class="flow-step active"><span>01</span><div class="flow-icon">✎</div><div><small>INPUT</small><h3>Person in Charge</h3><p>Pengumpulan dan pembaruan data melalui Google Spreadsheet.</p></div></article>
+<article class="flow-step"><span>02</span><div class="flow-icon">▥</div><div><small>VISUALIZE</small><h3>Looker Studio</h3><p>Data diolah menjadi dashboard, tren, peta, dan indikator kinerja.</p></div></article>
+<article class="flow-step"><span>03</span><div class="flow-icon">◎</div><div><small>INTEGRATE</small><h3>Website 1DEA</h3><p>Seluruh dashboard dan database disatukan dalam satu portal.</p></div></article>
+<article class="flow-step"><span>04</span><div class="flow-icon">✓</div><div><small>REPORT</small><h3>User Reporting</h3><p>Informasi disampaikan melalui laporan sesuai frekuensi pemantauan.</p></div></article>
+</div>
+</div>
+</section>
+<section class="coverage section">
+<div class="container coverage-card reveal">
+<div class="coverage-copy"><span class="eyebrow light">Platform Coverage</span><h2>Dibangun untuk dua operasi.<br/><em>Satu standar data.</em></h2><p>1DEA menghubungkan informasi lingkungan PT Maruwai Coal dan PT Lahai Coal dalam struktur monitoring yang konsisten.</p></div>
+<div class="company-cards">
+<article><span>MC</span><div><small>PT</small><h3>Maruwai Coal</h3><p>Land • Water • B3 • NDVI • Biodiversity</p></div><b>↗</b></article>
+<article><span>LC</span><div><small>PT</small><h3>Lahai Coal</h3><p>Land • Water • B3 • NDVI • Biodiversity</p></div><b>↗</b></article>
+</div>
+</div>
+</section>
+<section class="roadmap section" id="roadmap">
+<div class="container section-heading centered reveal">
+<span class="eyebrow">1DEA Development</span>
+<h2>Platform yang terus <em>bertumbuh.</em></h2>
+<p>Pengembangan 1DEA berikutnya memperluas integrasi data untuk mendukung pengelolaan lingkungan dan keberlanjutan yang lebih komprehensif.</p>
+</div>
+<div class="container roadmap-grid">
+<article class="roadmap-card reveal"><div class="roadmap-icon emission">≋</div><span>01</span><h3>Air Emission</h3><p>Integrasi data emisi udara ke dalam sistem monitoring digital.</p><div class="timeline"><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Apr</small></article>
+<article class="roadmap-card reveal delay-1"><div class="roadmap-icon domestic">⌂</div><span>02</span><h3>Domestic Waste</h3><p>Pengembangan database dan visualisasi pengelolaan sampah domestik.</p><div class="timeline six"><i></i><i></i><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Jun</small></article>
+<article class="roadmap-card reveal delay-2"><div class="roadmap-icon sustain">✦</div><span>03</span><h3>Sustainability Report</h3><p>Integrasi informasi keberlanjutan menjadi dashboard yang terstruktur.</p><div class="timeline eight"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="done"></i></div><small>Jan — Aug</small></article>
+</div>
+</section>
+<section class="cta-section">
+<div class="container cta-shell reveal">
+<div aria-hidden="true" class="petal-stack cta-petals"><i class="petal petal-mint"></i><i class="petal petal-orange"></i><i class="petal petal-blue"></i></div>
+<div><span class="eyebrow light">ONE DATA ENVIRONMENT ALAMTRI</span><h2>Satu data.<br/>Satu dashboard.<br/><em>Keputusan lebih cepat.</em></h2></div>
+<div class="cta-side"><p>Akses seluruh dashboard dan database lingkungan melalui platform 1DEA.</p><a class="btn btn-orange" href="dashboard.html">Buka Dashboard 1DEA <span>↗</span></a></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-main">
+<div class="footer-brand">
+<a aria-label="AlamTri Geo — 1DEA" class="brand" href="#top"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="assets/alamtri-geo-logo.png" width="184"/></span></a>
+<p>Pusat data lingkungan terpadu PT Maruwai Coal dan PT Lahai Coal.</p>
+</div>
+<div><h4>Platform</h4><a href="#tentang">Tentang 1DEA</a><a href="#modul">Modul</a><a href="#workflow">Workflow</a><a href="#roadmap">Roadmap</a></div>
+<div><h4>Akses</h4><a href="dashboard.html">Dashboard ↗</a><a href="database.html">Database ↗</a><a href="modules/keanekaragaman-hayati.html">Biodiversity ↗</a></div>
+<div class="footer-official-logo"><img alt="AlamTri Geo" decoding="async" height="79" loading="lazy" src="assets/alamtri-geo-logo.png" width="220"/></div>
+</div>
+<div class="container footer-bottom"><span>© 2026 1DEA — Environment Department</span><span>PT Maruwai Coal · PT Lahai Coal</span></div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

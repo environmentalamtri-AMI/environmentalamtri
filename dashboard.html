@@ -1,189 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Dashboard terintegrasi 1DEA — One Data Environment Alamtri">
-  <meta name="theme-color" content="#003f52">
-  <title>Dashboard 1DEA</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="subpage.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Dashboard terintegrasi 1DEA — One Data Environment Alamtri" name="description"/>
+<meta content="#003f52" name="theme-color"/>
+<title>Dashboard 1DEA</title>
+<link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="subpage.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="sub-header">
-    <div class="container sub-nav">
-      <a class="brand" href="index.html" aria-label="1DEA — kembali ke beranda">
-        <span class="brand-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="brand-copy"><strong>1DEA</strong><small>One Data Environment Alamtri</small></span>
-      </a>
-      <nav class="sub-nav-links" aria-label="Navigasi dashboard">
-        <a href="index.html#tentang">Tentang</a>
-        <a href="index.html#modul">Modul</a>
-        <a href="database.html">Database</a>
-      </nav>
-      <a class="sub-back" href="index.html">← Beranda</a>
-    </div>
-  </header>
-
-  <main class="sub-main dashboard-page">
-    <section class="sub-hero dashboard-hero">
-      <div class="container sub-hero-grid">
-        <div>
-          <span class="sub-pill">Integrated Environmental Intelligence</span>
-          <h1>Dashboard<br>1DEA.</h1>
-          <p>Pusat visualisasi data lingkungan PT Maruwai Coal dan PT Lahai Coal. Pilih dashboard untuk memantau settling pond, pembukaan lahan, reklamasi, dan insiden lingkungan secara terintegrasi.</p>
-          <div class="hero-status-row" aria-label="Status dashboard">
-            <span><i></i> 5 dashboard terhubung</span>
-            <span>2 perusahaan</span>
-            <span>Looker Studio</span>
-          </div>
-        </div>
-        <div class="sub-hero-panel live-panel">
-          <small>PLATFORM STATUS</small>
-          <strong><i></i> Live Dashboard</strong>
-          <span>Data ditampilkan langsung dari laporan Looker Studio yang telah disematkan.</span>
-          <div class="live-meta">
-            <div><b>5</b><small>REPORTS</small></div>
-            <div><b>3</b><small>TOPICS</small></div>
-            <div><b>2</b><small>SITES</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="dashboard-hub" aria-labelledby="dashboard-heading">
-      <div class="container">
-        <div class="dashboard-intro">
-          <div>
-            <span class="eyebrow dashboard-eyebrow">ENVIRONMENTAL MONITORING</span>
-            <h2 id="dashboard-heading">Pilih dashboard yang ingin ditampilkan.</h2>
-          </div>
-          <p>Dashboard dimuat sesuai pilihan agar halaman tetap ringan. Gunakan tombol layar penuh untuk membuka laporan dengan area kerja yang lebih luas.</p>
-        </div>
-
-        <div class="dashboard-selector" role="tablist" aria-label="Daftar dashboard 1DEA">
-          <button class="dashboard-choice active" type="button" role="tab" aria-selected="true"
-            data-dashboard="sp-mc"
-            data-title="Settling Pond PT Maruwai Coal"
-            data-kicker="WATER MANAGEMENT · PT MARUWAI COAL"
-            data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Maruwai Coal."
-            data-url="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud">
-            <span class="choice-icon water-icon" aria-hidden="true">≈</span>
-            <span><small>WATER MANAGEMENT</small><strong>Settling Pond</strong><em>PT Maruwai Coal</em></span>
-            <b>01</b>
-          </button>
-
-          <button class="dashboard-choice" type="button" role="tab" aria-selected="false"
-            data-dashboard="sp-lc"
-            data-title="Settling Pond PT Lahai Coal"
-            data-kicker="WATER MANAGEMENT · PT LAHAI COAL"
-            data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Lahai Coal."
-            data-url="https://datastudio.google.com/embed/reporting/06eb00c8-ef88-4930-95c2-755a7936554f/page/p_wdab9zmxud">
-            <span class="choice-icon water-icon" aria-hidden="true">≈</span>
-            <span><small>WATER MANAGEMENT</small><strong>Settling Pond</strong><em>PT Lahai Coal</em></span>
-            <b>02</b>
-          </button>
-
-          <button class="dashboard-choice" type="button" role="tab" aria-selected="false"
-            data-dashboard="land-mc"
-            data-title="Pembukaan Lahan dan Reklamasi PT Maruwai Coal"
-            data-kicker="LAND MANAGEMENT · PT MARUWAI COAL"
-            data-description="Perbandingan rencana, realisasi pembukaan lahan, dan progres reklamasi PT Maruwai Coal."
-            data-url="https://datastudio.google.com/embed/reporting/6b88573f-2e10-45a1-b1bf-842a8e8700db/page/SnbUF">
-            <span class="choice-icon land-icon" aria-hidden="true">⌁</span>
-            <span><small>LAND MANAGEMENT</small><strong>Bukaan & Reklamasi</strong><em>PT Maruwai Coal</em></span>
-            <b>03</b>
-          </button>
-
-          <button class="dashboard-choice" type="button" role="tab" aria-selected="false"
-            data-dashboard="land-lc"
-            data-title="Pembukaan Lahan dan Reklamasi PT Lahai Coal"
-            data-kicker="LAND MANAGEMENT · PT LAHAI COAL"
-            data-description="Perbandingan rencana, realisasi pembukaan lahan, dan progres reklamasi PT Lahai Coal."
-            data-url="https://datastudio.google.com/embed/reporting/7242b049-d985-4125-b48c-711ded9a631c/page/SnbUF">
-            <span class="choice-icon land-icon" aria-hidden="true">⌁</span>
-            <span><small>LAND MANAGEMENT</small><strong>Bukaan & Reklamasi</strong><em>PT Lahai Coal</em></span>
-            <b>04</b>
-          </button>
-
-          <button class="dashboard-choice" type="button" role="tab" aria-selected="false"
-            data-dashboard="incident"
-            data-title="Insiden Lingkungan"
-            data-kicker="ENVIRONMENTAL INCIDENT · INTEGRATED"
-            data-description="Ringkasan kategori, tren, lokasi, dan status tindak lanjut insiden lingkungan."
-            data-url="https://datastudio.google.com/embed/reporting/7cecc486-ae8b-4942-822c-1c7d6e2043d5/page/wOQsF">
-            <span class="choice-icon incident-icon" aria-hidden="true">!</span>
-            <span><small>ENVIRONMENTAL INCIDENT</small><strong>Insiden Lingkungan</strong><em>Integrated overview</em></span>
-            <b>05</b>
-          </button>
-        </div>
-
-        <article class="looker-shell" id="dashboard-viewer">
-          <header class="looker-toolbar">
-            <div class="looker-title-wrap">
-              <span id="dashboard-kicker">WATER MANAGEMENT · PT MARUWAI COAL</span>
-              <h3 id="dashboard-title">Settling Pond PT Maruwai Coal</h3>
-              <p id="dashboard-description">Pemantauan kualitas air, debit, dan performa settling pond PT Maruwai Coal.</p>
-            </div>
-            <div class="looker-actions">
-              <span class="connection-state"><i></i> Embedded</span>
-              <button class="toolbar-button" id="reload-dashboard" type="button" title="Muat ulang dashboard" aria-label="Muat ulang dashboard">↻</button>
-              <a class="toolbar-button open-report" id="open-dashboard" href="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" target="_blank" rel="noopener noreferrer" title="Buka laporan di tab baru" aria-label="Buka laporan di tab baru">↗</a>
-              <button class="toolbar-button fullscreen-button" id="fullscreen-dashboard" type="button" title="Layar penuh" aria-label="Tampilkan dashboard layar penuh">⛶</button>
-            </div>
-          </header>
-
-          <div class="looker-stage" id="looker-stage">
-            <div class="looker-loader" id="looker-loader" role="status" aria-live="polite">
-              <span class="loader-mark"><i></i><i></i><i></i></span>
-              <strong>Memuat dashboard...</strong>
-              <small>Looker Studio sedang menyiapkan visualisasi.</small>
-            </div>
-            <iframe
-              id="looker-frame"
-              title="Settling Pond PT Maruwai Coal"
-              src="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud"
-              loading="eager"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads">
-            </iframe>
-            <noscript>
-              <div class="dashboard-fallback">JavaScript perlu diaktifkan untuk memilih dan memuat dashboard Looker Studio.</div>
-            </noscript>
-          </div>
-
-          <footer class="looker-footer">
-            <p><strong>Dashboard tidak tampil?</strong> Pastikan laporan Looker Studio mengizinkan embedding dan akun Anda memiliki akses.</p>
-            <a id="fallback-link" href="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" target="_blank" rel="noopener noreferrer">Buka langsung di Looker Studio →</a>
-          </footer>
-        </article>
-
-        <div class="dashboard-information">
-          <article>
-            <span>01</span>
-            <div><small>LIVE SOURCE</small><h3>Data tetap dikelola di Looker Studio</h3><p>GitHub Pages menampilkan laporan melalui iframe tanpa menyalin dataset ke repository publik.</p></div>
-          </article>
-          <article>
-            <span>02</span>
-            <div><small>ACCESS CONTROL</small><h3>Izin mengikuti pengaturan laporan</h3><p>Laporan privat tetap meminta pengguna masuk dengan akun Google yang telah diberi akses.</p></div>
-          </article>
-          <article>
-            <span>03</span>
-            <div><small>RESPONSIVE VIEW</small><h3>Optimal untuk desktop</h3><p>Pada perangkat seluler, gunakan orientasi landscape atau tombol layar penuh untuk tampilan terbaik.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="sub-footer">
-    <div class="container"><span>© 2026 1DEA — Environment Department</span><span>PT Maruwai Coal · PT Lahai Coal</span></div>
-  </footer>
-
-  <script src="dashboard.js"></script>
+<div aria-hidden="true" class="grain"></div>
+<header class="sub-header">
+<div class="container sub-nav">
+<a aria-label="1DEA — kembali ke beranda" class="brand" href="index.html"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="assets/alamtri-geo-logo.png" width="184"/></span></a>
+<nav aria-label="Navigasi dashboard" class="sub-nav-links">
+<a href="index.html#tentang">Tentang</a>
+<a href="index.html#modul">Modul</a>
+<a href="database.html">Database</a>
+</nav>
+<a class="sub-back" href="index.html">← Beranda</a>
+</div>
+</header>
+<main class="sub-main dashboard-page">
+<section class="sub-hero dashboard-hero">
+<div class="container sub-hero-grid">
+<div>
+<span class="sub-pill">Integrated Environmental Intelligence</span>
+<h1>Dashboard<br/>1DEA.</h1>
+<p>Pusat visualisasi data lingkungan PT Maruwai Coal dan PT Lahai Coal. Pilih dashboard untuk memantau settling pond, pembukaan lahan, reklamasi, dan insiden lingkungan secara terintegrasi.</p>
+<div aria-label="Status dashboard" class="hero-status-row">
+<span><i></i> 5 dashboard terhubung</span>
+<span>2 perusahaan</span>
+<span>Looker Studio</span>
+</div>
+</div>
+<div class="sub-hero-panel live-panel">
+<small>PLATFORM STATUS</small>
+<strong><i></i> Live Dashboard</strong>
+<span>Data ditampilkan langsung dari laporan Looker Studio yang telah disematkan.</span>
+<div class="live-meta">
+<div><b>5</b><small>REPORTS</small></div>
+<div><b>3</b><small>TOPICS</small></div>
+<div><b>2</b><small>SITES</small></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="dashboard-heading" class="dashboard-hub">
+<div class="container">
+<div class="dashboard-intro">
+<div>
+<span class="eyebrow dashboard-eyebrow">ENVIRONMENTAL MONITORING</span>
+<h2 id="dashboard-heading">Pilih dashboard yang ingin ditampilkan.</h2>
+</div>
+<p>Dashboard dimuat sesuai pilihan agar halaman tetap ringan. Gunakan tombol layar penuh untuk membuka laporan dengan area kerja yang lebih luas.</p>
+</div>
+<div aria-label="Daftar dashboard 1DEA" class="dashboard-selector" role="tablist">
+<button aria-selected="true" class="dashboard-choice active" data-dashboard="sp-mc" data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Maruwai Coal." data-kicker="WATER MANAGEMENT · PT MARUWAI COAL" data-title="Settling Pond PT Maruwai Coal" data-url="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" role="tab" type="button">
+<span aria-hidden="true" class="choice-icon water-icon">≈</span>
+<span><small>WATER MANAGEMENT</small><strong>Settling Pond</strong><em>PT Maruwai Coal</em></span>
+<b>01</b>
+</button>
+<button aria-selected="false" class="dashboard-choice" data-dashboard="sp-lc" data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Lahai Coal." data-kicker="WATER MANAGEMENT · PT LAHAI COAL" data-title="Settling Pond PT Lahai Coal" data-url="https://datastudio.google.com/embed/reporting/06eb00c8-ef88-4930-95c2-755a7936554f/page/p_wdab9zmxud" role="tab" type="button">
+<span aria-hidden="true" class="choice-icon water-icon">≈</span>
+<span><small>WATER MANAGEMENT</small><strong>Settling Pond</strong><em>PT Lahai Coal</em></span>
+<b>02</b>
+</button>
+<button aria-selected="false" class="dashboard-choice" data-dashboard="land-mc" data-description="Perbandingan rencana, realisasi pembukaan lahan, dan progres reklamasi PT Maruwai Coal." data-kicker="LAND MANAGEMENT · PT MARUWAI COAL" data-title="Pembukaan Lahan dan Reklamasi PT Maruwai Coal" data-url="https://datastudio.google.com/embed/reporting/6b88573f-2e10-45a1-b1bf-842a8e8700db/page/SnbUF" role="tab" type="button">
+<span aria-hidden="true" class="choice-icon land-icon">⌁</span>
+<span><small>LAND MANAGEMENT</small><strong>Bukaan &amp; Reklamasi</strong><em>PT Maruwai Coal</em></span>
+<b>03</b>
+</button>
+<button aria-selected="false" class="dashboard-choice" data-dashboard="land-lc" data-description="Perbandingan rencana, realisasi pembukaan lahan, dan progres reklamasi PT Lahai Coal." data-kicker="LAND MANAGEMENT · PT LAHAI COAL" data-title="Pembukaan Lahan dan Reklamasi PT Lahai Coal" data-url="https://datastudio.google.com/embed/reporting/7242b049-d985-4125-b48c-711ded9a631c/page/SnbUF" role="tab" type="button">
+<span aria-hidden="true" class="choice-icon land-icon">⌁</span>
+<span><small>LAND MANAGEMENT</small><strong>Bukaan &amp; Reklamasi</strong><em>PT Lahai Coal</em></span>
+<b>04</b>
+</button>
+<button aria-selected="false" class="dashboard-choice" data-dashboard="incident" data-description="Ringkasan kategori, tren, lokasi, dan status tindak lanjut insiden lingkungan." data-kicker="ENVIRONMENTAL INCIDENT · INTEGRATED" data-title="Insiden Lingkungan" data-url="https://datastudio.google.com/embed/reporting/7cecc486-ae8b-4942-822c-1c7d6e2043d5/page/wOQsF" role="tab" type="button">
+<span aria-hidden="true" class="choice-icon incident-icon">!</span>
+<span><small>ENVIRONMENTAL INCIDENT</small><strong>Insiden Lingkungan</strong><em>Integrated overview</em></span>
+<b>05</b>
+</button>
+</div>
+<article class="looker-shell" id="dashboard-viewer">
+<header class="looker-toolbar">
+<div class="looker-title-wrap">
+<span id="dashboard-kicker">WATER MANAGEMENT · PT MARUWAI COAL</span>
+<h3 id="dashboard-title">Settling Pond PT Maruwai Coal</h3>
+<p id="dashboard-description">Pemantauan kualitas air, debit, dan performa settling pond PT Maruwai Coal.</p>
+</div>
+<div class="looker-actions">
+<span class="connection-state"><i></i> Embedded</span>
+<button aria-label="Muat ulang dashboard" class="toolbar-button" id="reload-dashboard" title="Muat ulang dashboard" type="button">↻</button>
+<a aria-label="Buka laporan di tab baru" class="toolbar-button open-report" href="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" id="open-dashboard" rel="noopener noreferrer" target="_blank" title="Buka laporan di tab baru">↗</a>
+<button aria-label="Tampilkan dashboard layar penuh" class="toolbar-button fullscreen-button" id="fullscreen-dashboard" title="Layar penuh" type="button">⛶</button>
+</div>
+</header>
+<div class="looker-stage" id="looker-stage">
+<div aria-live="polite" class="looker-loader" id="looker-loader" role="status">
+<span class="loader-mark"><i></i><i></i><i></i></span>
+<strong>Memuat dashboard...</strong>
+<small>Looker Studio sedang menyiapkan visualisasi.</small>
+</div>
+<iframe allowfullscreen="" id="looker-frame" loading="eager" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads" src="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" title="Settling Pond PT Maruwai Coal">
+</iframe>
+<noscript>
+<div class="dashboard-fallback">JavaScript perlu diaktifkan untuk memilih dan memuat dashboard Looker Studio.</div>
+</noscript>
+</div>
+<footer class="looker-footer">
+<p><strong>Dashboard tidak tampil?</strong> Pastikan laporan Looker Studio mengizinkan embedding dan akun Anda memiliki akses.</p>
+<a href="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" id="fallback-link" rel="noopener noreferrer" target="_blank">Buka langsung di Looker Studio →</a>
+</footer>
+</article>
+<div class="dashboard-information">
+<article>
+<span>01</span>
+<div><small>LIVE SOURCE</small><h3>Data tetap dikelola di Looker Studio</h3><p>GitHub Pages menampilkan laporan melalui iframe tanpa menyalin dataset ke repository publik.</p></div>
+</article>
+<article>
+<span>02</span>
+<div><small>ACCESS CONTROL</small><h3>Izin mengikuti pengaturan laporan</h3><p>Laporan privat tetap meminta pengguna masuk dengan akun Google yang telah diberi akses.</p></div>
+</article>
+<article>
+<span>03</span>
+<div><small>RESPONSIVE VIEW</small><h3>Optimal untuk desktop</h3><p>Pada perangkat seluler, gunakan orientasi landscape atau tombol layar penuh untuk tampilan terbaik.</p></div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="sub-footer">
+<div class="container"><span>© 2026 1DEA — Environment Department</span><span>PT Maruwai Coal · PT Lahai Coal</span></div>
+</footer>
+<script src="dashboard.js"></script>
 </body>
 </html>
