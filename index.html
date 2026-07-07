@@ -8,7 +8,7 @@
 <meta content="#003f52" name="theme-color"/>
 <title>1DEA — One Data Environment Alamtri</title>
 <link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
-<link href="style.css?v=20260707-11" rel="stylesheet"/>
+<link href="style.css?v=20260707-hero-slider-1" rel="stylesheet"/>
 </head>
 <body>
 <div aria-hidden="true" class="grain"></div>
@@ -52,59 +52,108 @@
 <div><strong data-count="4">4</strong><span>Area pengelolaan</span></div>
 </div>
 </div>
-<div aria-label="Pratinjau dashboard 1DEA" class="hero-dashboard reveal delay-1">
-<div class="dashboard-window">
-<div class="window-bar">
-<div class="window-dots"><i></i><i></i><i></i></div>
-<span>Environmental Overview</span>
-<b><i></i> Live</b>
+<div aria-label="Slideshow modul utama 1DEA" class="hero-module-slider reveal delay-1" data-autoplay="2600">
+<div class="slider-frame">
+<div class="slider-topbar">
+<span class="slider-live"><i></i> MODUL TERHUBUNG</span>
+<div class="slider-count"><b data-slider-current="">01</b><em>/06</em></div>
 </div>
-<div class="dashboard-main">
-<aside class="dash-side">
-<div class="mini-logo">1D</div>
-<button aria-label="Overview" class="active">⌂</button>
-<button aria-label="Land">◇</button>
-<button aria-label="Water">≈</button>
-<button aria-label="B3">▣</button>
-<button aria-label="Biodiversity">✦</button>
-</aside>
-<div class="dash-content">
-<div class="dash-head">
-<div><small>ONE DATA ENVIRONMENT</small><h2>Good morning, Enviro Team.</h2></div>
-<div class="company-switch"><button class="active">MC</button><button>LC</button></div>
+<div aria-live="polite" class="hero-slides">
+<a class="hero-slide is-active" data-slide="0" href="modules/bukaan-lahan-reklamasi.html">
+<img alt="Area bukaan lahan dan reklamasi" decoding="async" fetchpriority="high" src="assets/modules/module-bukaan-lahan.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">LAND MANAGEMENT</span>
+<h2>Bukaan Lahan<br/>&amp; Reklamasi</h2>
+<p>Bandingkan rencana, realisasi bukaan lahan, dan progres pemulihan area secara terintegrasi.</p>
+<div class="slide-meta"><span>PT Maruwai Coal</span><span>PT Lahai Coal</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
 </div>
-<div class="metric-row">
-<article><span>Land &amp; Reclamation</span><strong>Updated</strong><small>Monthly reporting</small></article>
-<article><span>Acid Mine Drainage</span><strong>Daily</strong><small>16.00 WIB</small></article>
-<article><span>Waste B3</span><strong>100%</strong><small>Balance monitored</small></article>
+<span class="slide-number">01</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="1" href="modules/air-asam-tambang.html" tabindex="-1">
+<img alt="Settling pond dan pengelolaan air asam tambang" decoding="async" src="assets/modules/module-air-asam-tambang.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">WATER MANAGEMENT</span>
+<h2>Air Asam<br/>Tambang</h2>
+<p>Pantau kualitas air, debit, pengujian berkala, dan kinerja settling pond dalam satu tampilan.</p>
+<div class="slide-meta"><span>PT Maruwai Coal</span><span>PT Lahai Coal</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
 </div>
-<div class="dash-grid">
-<article class="chart-card">
-<div class="card-title"><div><small>RECLAMATION</small><b>Plan vs Realization</b></div><span>2025</span></div>
-<div aria-hidden="true" class="bars">
-<i style="--a:46%;--b:58%"></i><i style="--a:68%;--b:76%"></i><i style="--a:52%;--b:65%"></i><i style="--a:78%;--b:88%"></i><i style="--a:64%;--b:74%"></i><i style="--a:82%;--b:92%"></i>
+<span class="slide-number">02</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="2" href="modules/limbah-b3.html" tabindex="-1">
+<img alt="Fasilitas pengelolaan limbah B3" decoding="async" src="assets/modules/module-limbah-b3.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">HAZARDOUS WASTE</span>
+<h2>Pengelolaan<br/>Limbah B3</h2>
+<p>Rekam neraca limbah, penyimpanan, pengangkutan, manifest, dan kepatuhan pengelolaan.</p>
+<div class="slide-meta"><span>PT Maruwai Coal</span><span>PT Lahai Coal</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
 </div>
-<div class="chart-legend"><span><i></i> Rencana</span><span><i></i> Realisasi</span></div>
-</article>
-<article class="ndvi-card">
-<div class="card-title"><div><small>NDVI RECLAMATION</small><b>Vegetation profile</b></div><span>Q4</span></div>
-<div aria-hidden="true" class="ndvi-map"><i></i><i></i><i></i><i></i><i></i><b>NDVI</b></div>
-<div class="ndvi-scale"><span>Low</span><i></i><span>High</span></div>
-</article>
-<article class="water-card">
-<div class="card-title"><div><small>WATER QUALITY</small><b>Settling pond status</b></div><span>Today</span></div>
-<div class="water-list">
-<div><span>SP LM01</span><b>pH 6.4</b><i class="ok">Comply</i></div>
-<div><span>SP LM02</span><b>pH 6.6</b><i class="ok">Comply</i></div>
-<div><span>SP CHPP</span><b>pH 6.5</b><i class="ok">Comply</i></div>
+<span class="slide-number">03</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="3" href="modules/nursery.html" tabindex="-1">
+<img alt="Nursery PT Maruwai Coal" decoding="async" src="assets/modules/module-nursery.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">RECLAMATION SUPPORT</span>
+<h2>Nursery<br/>&amp; Pembibitan</h2>
+<p>Monitor produksi bibit, stok tanaman, rehabilitasi, distribusi, dan dukungan reklamasi.</p>
+<div class="slide-meta"><span>PT Maruwai Coal</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
 </div>
-</article>
+<span class="slide-number">04</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="4" href="modules/keanekaragaman-hayati.html" tabindex="-1">
+<img alt="Rusa sambar dalam program keanekaragaman hayati" decoding="async" src="assets/modules/module-biodiversity.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">BIODIVERSITY</span>
+<h2>Keanekaragaman<br/>Hayati</h2>
+<p>Dokumentasikan flora, fauna, habitat, program konservasi, dan perkembangan biodiversitas.</p>
+<div class="slide-meta"><span>Program Biodiversity</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
+</div>
+<span class="slide-number">05</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="5" href="modules/insiden-lingkungan.html" tabindex="-1">
+<img alt="Penanganan insiden lingkungan di area pertambangan" decoding="async" src="assets/modules/module-insiden-lingkungan.webp"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">ENVIRONMENTAL INCIDENT</span>
+<h2>Insiden<br/>Lingkungan</h2>
+<p>Analisis kategori kejadian, lokasi, tingkat risiko, status tindak lanjut, dan tren insiden.</p>
+<div class="slide-meta"><span>Integrated Overview</span></div>
+<strong class="slide-link">Jelajahi modul <i>↗</i></strong>
+</div>
+<span class="slide-number">06</span>
+</a>
+</div>
+<button aria-label="Modul sebelumnya" class="slider-arrow slider-prev" type="button"><span>←</span></button>
+<button aria-label="Modul berikutnya" class="slider-arrow slider-next" type="button"><span>→</span></button>
+<div class="slider-footer">
+<div aria-label="Pilih modul" class="slider-tabs" role="tablist">
+<button aria-label="Bukaan Lahan dan Reklamasi" aria-selected="true" class="slider-tab is-active" data-slide-to="0" role="tab" type="button"><i></i><span>Land</span></button>
+<button aria-label="Air Asam Tambang" aria-selected="false" class="slider-tab" data-slide-to="1" role="tab" type="button"><i></i><span>Water</span></button>
+<button aria-label="Pengelolaan Limbah B3" aria-selected="false" class="slider-tab" data-slide-to="2" role="tab" type="button"><i></i><span>B3</span></button>
+<button aria-label="Nursery" aria-selected="false" class="slider-tab" data-slide-to="3" role="tab" type="button"><i></i><span>Nursery</span></button>
+<button aria-label="Keanekaragaman Hayati" aria-selected="false" class="slider-tab" data-slide-to="4" role="tab" type="button"><i></i><span>Biodiv.</span></button>
+<button aria-label="Insiden Lingkungan" aria-selected="false" class="slider-tab" data-slide-to="5" role="tab" type="button"><i></i><span>Incident</span></button>
+</div>
+<div aria-hidden="true" class="slider-progress"><i></i></div>
 </div>
 </div>
-</div>
-</div>
-<div class="float-card float-ndvi"><span>NDVI</span><b>Vegetation Health</b><small>Spatial monitoring</small></div>
-<div class="float-card float-update"><i></i><div><b>Data synchronized</b><small>Google Sheets → Looker Studio</small></div></div>
+<div aria-hidden="true" class="slider-shadow-card shadow-one"></div>
+<div aria-hidden="true" class="slider-shadow-card shadow-two"></div>
 </div>
 </div>
 <div class="scroll-hint"><span></span> Scroll to explore</div>
@@ -227,6 +276,6 @@
 </div>
 <div class="container footer-bottom"><span>© 2026 1DEA — Environment Department</span><span>PT Maruwai Coal · PT Lahai Coal</span></div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js?v=20260707-hero-slider-1"></script>
 </body>
 </html>
