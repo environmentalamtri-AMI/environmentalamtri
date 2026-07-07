@@ -1,5 +1,143 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#003f52" name="theme-color"/><title>Bukaan Lahan &amp; Reklamasi — 1DEA</title><link href="../assets/alamtri-geo-mark.png" rel="icon" type="image/png"/><link href="../style.css?v=20260707-3" rel="stylesheet"/><link href="../subpage.css?v=20260707-3" rel="stylesheet"/></head><body>
-<header class="sub-header"><div class="container sub-nav"><a aria-label="AlamTri Geo — 1DEA" class="brand" href="../index.html"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="../assets/alamtri-geo-logo.png" width="184"/></span></a><nav class="sub-nav-links"><a href="../dashboard.html#land-mc">Dashboard</a><a href="../database.html">Database</a><a href="../index.html#roadmap">Roadmap</a></nav><a class="sub-back" href="../dashboard.html#land-mc">← Dashboard</a></div></header>
-<main class="sub-main"><section class="sub-hero"><div class="container sub-hero-grid"><div><span class="sub-pill">Land Management</span><h1>Bukaan Lahan<br/>&amp; Reklamasi</h1><p>Mengelola data rencana dan realisasi bukaan lahan, progres reklamasi, penggunaan lahan, serta dokumentasi spasial.</p></div><div class="sub-hero-panel"><small>MODULE STATUS</small><strong>Interface Ready</strong><span>Siap dihubungkan dengan data aktual dan autentikasi.</span></div></div></section>
-<section class="content-section"><div class="container content-grid"><article class="panel"><h2>Fungsi modul</h2><p>Mengelola data rencana dan realisasi bukaan lahan, progres reklamasi, penggunaan lahan, serta dokumentasi spasial.</p><ul class="feature-list"><li>Rencana dan realisasi per tahun</li><li>Kategori penggunaan lahan</li><li>Progress reklamasi</li><li>Peta dan dokumen pendukung</li></ul><h3 style="margin-top:28px">Struktur data utama</h3><table class="data-table"><thead><tr><th>Perusahaan</th><th>Tahun</th><th>Kategori</th><th>Luas (Ha)</th><th>Status</th></tr></thead><tbody><tr><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><div class="notice">Data contoh sengaja tidak ditampilkan untuk menjaga keamanan. Sambungkan modul ini ke database setelah autentikasi dan hak akses tersedia.</div></article><aside class="panel"><h3>Alur pengelolaan</h3><div class="status-line"><span>Input data</span><b class="status-badge">Draft</b></div><div class="status-line"><span>Validasi</span><b class="status-badge">Review</b></div><div class="status-line"><span>Persetujuan</span><b class="status-badge">Approve</b></div><div class="status-line"><span>Dashboard</span><b class="status-badge">Publish</b></div></aside></div></section></main><footer class="sub-footer"><div class="container"><span>© 2026 1DEA</span><span>Bukaan Lahan &amp; Reklamasi</span></div></footer></body></html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#003f52" />
+  <title>Bukaan Lahan & Reklamasi — 1DEA</title>
+  <link rel="icon" href="../assets/alamtri-geo-mark.png" type="image/png" />
+  <link rel="stylesheet" href="../style.css?v=20260707-4" />
+  <link rel="stylesheet" href="../subpage.css?v=20260707-4" />
+</head>
+<body>
+  <header class="sub-header">
+    <div class="container sub-nav">
+      <a class="brand" href="../index.html" aria-label="AlamTri Geo — 1DEA">
+        <span class="brand-logo-shell">
+          <img class="brand-logo" src="../assets/alamtri-geo-logo.png" width="184" height="66" alt="AlamTri Geo" decoding="async" />
+        </span>
+      </a>
+      <nav class="sub-nav-links">
+        <a href="../dashboard.html#land-mc">Dashboard</a>
+        <a href="../database.html">Database</a>
+        <a href="../index.html#roadmap">Roadmap</a>
+      </nav>
+      <a class="sub-back" href="../dashboard.html#land-mc">← Dashboard</a>
+    </div>
+  </header>
+
+  <main class="sub-main land-live-page">
+    <section class="sub-hero">
+      <div class="container sub-hero-grid">
+        <div>
+          <span class="sub-pill">Land Management</span>
+          <h1>Bukaan Lahan<br />& Reklamasi</h1>
+          <p>
+            Visualisasi data aktual pembukaan lahan dan reklamasi PT Maruwai Coal dan PT Lahai Coal,
+            ditampilkan langsung dari laporan Looker Studio 1DEA.
+          </p>
+          <div class="hero-status-row">
+            <span><i></i> 2 dashboard terhubung</span>
+            <span>2 perusahaan</span>
+            <span>Live Looker Studio</span>
+          </div>
+        </div>
+        <div class="sub-hero-panel live-panel">
+          <small>MODULE STATUS</small>
+          <strong><i></i> Live Dashboard</strong>
+          <span>Data mengikuti pembaruan pada sumber laporan Looker Studio.</span>
+          <div class="live-meta">
+            <div><b>2</b><small>REPORTS</small></div>
+            <div><b>2</b><small>SITES</small></div>
+            <div><b>1</b><small>MODULE</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="land-live-section">
+      <div class="container">
+        <div class="dashboard-intro land-live-intro">
+          <div>
+            <span class="dashboard-eyebrow">LAND & RECLAMATION MONITORING</span>
+            <h2>Pilih perusahaan untuk menampilkan dashboard.</h2>
+          </div>
+          <p>
+            Dashboard dimuat sesuai pilihan agar halaman tetap ringan. Gunakan tombol layar penuh untuk analisis lebih detail.
+          </p>
+        </div>
+
+        <div class="land-company-selector" role="tablist" aria-label="Pilih dashboard perusahaan">
+          <button class="land-company-card active" type="button" role="tab" aria-selected="true" data-report="mc">
+            <span class="company-code">MC</span>
+            <span>
+              <small>PT MARUWAI COAL</small>
+              <strong>Pembukaan Lahan & Reklamasi</strong>
+              <em>Dashboard operasional Maruwai Coal</em>
+            </span>
+            <b>01</b>
+          </button>
+          <button class="land-company-card" type="button" role="tab" aria-selected="false" data-report="lc">
+            <span class="company-code lc">LC</span>
+            <span>
+              <small>PT LAHAI COAL</small>
+              <strong>Pembukaan Lahan & Reklamasi</strong>
+              <em>Dashboard operasional Lahai Coal</em>
+            </span>
+            <b>02</b>
+          </button>
+        </div>
+
+        <section class="looker-shell land-looker-shell" id="live-dashboard" aria-live="polite">
+          <div class="looker-toolbar">
+            <div class="looker-title-wrap">
+              <span id="landReportLabel">PT MARUWAI COAL</span>
+              <h3 id="landReportTitle">Pembukaan Lahan & Reklamasi</h3>
+              <p id="landReportDescription">Laporan aktual PT Maruwai Coal dari Looker Studio.</p>
+            </div>
+            <div class="looker-actions">
+              <span class="connection-state"><i></i> Connected</span>
+              <button class="toolbar-button" id="landRefresh" type="button" title="Muat ulang dashboard" aria-label="Muat ulang dashboard">↻</button>
+              <a class="toolbar-button open-report" id="landOpenReport" href="#" target="_blank" rel="noopener" title="Buka laporan di tab baru" aria-label="Buka laporan di tab baru">↗</a>
+              <button class="toolbar-button" id="landFullscreen" type="button" title="Layar penuh" aria-label="Layar penuh">⛶</button>
+            </div>
+          </div>
+
+          <div class="looker-stage" id="landLookerStage">
+            <div class="looker-loader" id="landLoader">
+              <span class="loader-mark"><i></i><i></i><i></i></span>
+              <strong>Memuat dashboard</strong>
+              <small id="landLoaderText">PT Maruwai Coal</small>
+            </div>
+            <iframe
+              id="landLookerFrame"
+              title="Dashboard Pembukaan Lahan dan Reklamasi PT Maruwai Coal"
+              src="https://datastudio.google.com/embed/reporting/6b88573f-2e10-45a1-b1bf-842a8e8700db/page/SnbUF"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+          <div class="looker-footer">
+            <p>Dashboard ditampilkan dari Looker Studio. Data akan berubah mengikuti sumber laporan.</p>
+            <a id="landFallbackLink" href="https://datastudio.google.com/embed/reporting/6b88573f-2e10-45a1-b1bf-842a8e8700db/page/SnbUF" target="_blank" rel="noopener">Dashboard tidak tampil? Buka langsung ↗</a>
+          </div>
+        </section>
+
+        <div class="dashboard-information land-information">
+          <article><span>01</span><div><small>DATA SOURCE</small><h3>Looker Studio</h3><p>Halaman ini menampilkan laporan yang sudah Anda sematkan.</p></div></article>
+          <article><span>02</span><div><small>UPDATE</small><h3>Mengikuti sumber data</h3><p>Perubahan pada spreadsheet atau konektor laporan akan muncul di dashboard.</p></div></article>
+          <article><span>03</span><div><small>ACCESS</small><h3>Sesuai izin laporan</h3><p>Pengunjung harus memiliki akses jika laporan tidak dibagikan secara publik.</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sub-footer">
+    <div class="container"><span>© 2026 1DEA</span><span>Bukaan Lahan & Reklamasi</span></div>
+  </footer>
+
+  <script src="../land-reclamation.js?v=20260707-1"></script>
+</body>
+</html>
