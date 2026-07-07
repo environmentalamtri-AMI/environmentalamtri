@@ -776,3 +776,14 @@ button{font:inherit}
     padding-top:14px;
   }
 }
+
+
+/* =========================================================
+   Scrolled header input-data color fix (2026-07-07)
+   ========================================================= */
+.site-header.scrolled .main-nav .nav-input-link{
+  color:var(--teal-950)!important;
+}
+.site-header.scrolled .main-nav .nav-input-link:hover{
+  color:var(--orange)!important;
+}
