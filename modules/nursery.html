@@ -1,5 +1,55 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#003f52" name="theme-color"/><meta content="Modul Nursery 1DEA untuk monitoring produksi, stok, kualitas, dan distribusi bibit reklamasi." name="description"/><title>Nursery — 1DEA</title><link href="../assets/alamtri-geo-mark.png" rel="icon" type="image/png"/><link href="../style.css?v=20260707-9" rel="stylesheet"/><link href="../subpage.css?v=20260707-6" rel="stylesheet"/></head><body>
-<header class="sub-header"><div class="container sub-nav"><a aria-label="AlamTri Geo — 1DEA" class="brand" href="../index.html"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="../assets/alamtri-geo-logo.png" width="184"/></span></a><nav class="sub-nav-links"><a href="../dashboard.html">Dashboard</a><a href="../database.html">Database</a><a href="../index.html#roadmap">Roadmap</a></nav><a class="sub-back" href="../index.html#modul">← Modul</a></div></header>
-<main class="sub-main"><section class="sub-hero"><div class="container sub-hero-grid"><div><span class="sub-pill">Reclamation Support</span><h1>Nursery</h1><p>Mengelola produksi, stok, kondisi, dan distribusi bibit untuk mendukung pelaksanaan reklamasi yang terencana.</p></div><div class="sub-hero-panel"><small>MODULE STATUS</small><strong>Interface Ready</strong><span>Siap dihubungkan dengan database nursery dan autentikasi pengguna.</span></div></div></section>
-<section class="content-section"><div class="container content-grid"><article class="panel"><h2>Fungsi modul</h2><p>Mengelola data pembibitan secara terpusat dari tahapan produksi hingga distribusi bibit ke area reklamasi.</p><ul class="feature-list"><li>Stok bibit per jenis tanaman</li><li>Kondisi dan kesiapan bibit</li><li>Produksi serta pemeliharaan</li><li>Distribusi ke lokasi reklamasi</li></ul><h3 style="margin-top:28px">Struktur data utama</h3><table class="data-table"><thead><tr><th>Jenis Bibit</th><th>Stok</th><th>Siap Tanam</th><th>Distribusi</th><th>Periode</th></tr></thead><tbody><tr><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><div class="notice">Data akan ditampilkan setelah modul dihubungkan dengan sumber database nursery dan hak akses pengguna tersedia.</div></article><aside class="panel"><h3>Alur pengelolaan</h3><div class="status-line"><span>Produksi bibit</span><b class="status-badge">Input</b></div><div class="status-line"><span>Pemeliharaan</span><b class="status-badge">Monitor</b></div><div class="status-line"><span>Verifikasi stok</span><b class="status-badge">Review</b></div><div class="status-line"><span>Distribusi</span><b class="status-badge">Publish</b></div></aside></div></section></main><footer class="sub-footer"><div class="container"><span>© 2026 1DEA</span><span>Nursery</span></div></footer></body></html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#003f52" />
+  <meta name="description" content="Monitoring produksi, stok, pemeliharaan, kesiapan, dan distribusi bibit reklamasi PT Maruwai Coal." />
+  <title>Nursery — 1DEA</title>
+  <link rel="icon" href="../assets/alamtri-geo-mark.png" type="image/png" />
+  <link rel="stylesheet" href="../style.css?v=20260707-11" />
+  <link rel="stylesheet" href="../subpage.css?v=20260707-11" />
+</head>
+<body>
+  <header class="sub-header"><div class="container sub-nav">
+    <a class="brand" href="../index.html" aria-label="AlamTri Geo — 1DEA"><span class="brand-logo-shell"><img class="brand-logo" src="../assets/alamtri-geo-logo.png" width="184" height="66" alt="AlamTri Geo" decoding="async" /></span></a>
+    <nav class="sub-nav-links"><a href="../dashboard.html">Dashboard</a><a href="../database.html">Database</a><a href="../index.html#modul">Modul</a></nav>
+    <a class="sub-back" href="../index.html#modul">← Modul</a>
+  </div></header>
+  <main class="sub-main module-live-page">
+    <section class="sub-hero"><div class="container sub-hero-grid">
+      <div><span class="sub-pill">Reclamation Support</span><h1>Nursery</h1><p>Monitoring produksi, stok, pemeliharaan, kesiapan, dan distribusi bibit reklamasi PT Maruwai Coal.</p>
+        <div class="hero-status-row"><span><i></i> 1 dashboard terhubung</span><span>1 sumber</span><span>Live Looker Studio</span></div>
+      </div>
+      <div class="sub-hero-panel live-panel"><small>MODULE STATUS</small><strong><i></i> Live Dashboard</strong><span>Data mengikuti pembaruan pada sumber laporan Looker Studio.</span>
+        <div class="live-meta"><div><b>1</b><small>REPORTS</small></div><div><b>1</b><small>SOURCES</small></div><div><b>1</b><small>MODULE</small></div></div>
+      </div>
+    </div></section>
+    <section class="land-live-section"><div class="container">
+      <div class="dashboard-intro land-live-intro"><div><span class="dashboard-eyebrow">NURSERY & RECLAMATION SUPPORT</span><h2>Dashboard pembibitan PT Maruwai Coal.</h2></div><p>Data pembibitan ditampilkan langsung dari Looker Studio dan mengikuti pembaruan sumber laporan nursery.</p></div>
+      <div class="land-company-selector report-selector single" role="tablist" aria-label="Pilih dashboard laporan"><button class="land-company-card module-report-card active" type="button" role="tab" aria-selected="true"
+          data-report="mc" data-company="PT MARUWAI COAL" data-company-name="PT Maruwai Coal"
+          data-title="Pembibitan (Nursery)" data-description="Produksi, stok, pemeliharaan, dan distribusi bibit PT Maruwai Coal." data-url="https://datastudio.google.com/embed/reporting/b860005c-7a54-4e99-905b-c4e43c72aa3d/page/wOQsF">
+          <span class="company-code">MC</span>
+          <span><small>PT MARUWAI COAL</small><strong>Pembibitan (Nursery)</strong><em>Produksi, stok, pemeliharaan, dan distribusi bibit PT Maruwai Coal.</em></span><b>01</b>
+        </button></div>
+      <section class="looker-shell land-looker-shell" id="live-dashboard" aria-live="polite">
+        <div class="looker-toolbar"><div class="looker-title-wrap"><span id="moduleReportLabel">PT MARUWAI COAL</span><h3 id="moduleReportTitle">Pembibitan (Nursery)</h3><p id="moduleReportDescription">Produksi, stok, pemeliharaan, dan distribusi bibit PT Maruwai Coal.</p></div>
+          <div class="looker-actions"><span class="connection-state"><i></i> Connected</span><button class="toolbar-button" id="moduleRefresh" type="button" title="Muat ulang dashboard" aria-label="Muat ulang dashboard">↻</button><a class="toolbar-button open-report" id="moduleOpenReport" href="https://datastudio.google.com/embed/reporting/b860005c-7a54-4e99-905b-c4e43c72aa3d/page/wOQsF" target="_blank" rel="noopener" title="Buka laporan di tab baru" aria-label="Buka laporan di tab baru">↗</a><button class="toolbar-button" id="moduleFullscreen" type="button" title="Layar penuh" aria-label="Layar penuh">⛶</button></div>
+        </div>
+        <div class="looker-stage" id="moduleLookerStage"><div class="looker-loader" id="moduleLoader"><span class="loader-mark"><i></i><i></i><i></i></span><strong>Memuat dashboard</strong><small id="moduleLoaderText">PT Maruwai Coal</small></div>
+          <iframe id="moduleReportFrame" title="Pembibitan (Nursery) — PT Maruwai Coal" src="https://datastudio.google.com/embed/reporting/b860005c-7a54-4e99-905b-c4e43c72aa3d/page/wOQsF" loading="eager" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="looker-footer"><p>Dashboard ditampilkan dari Looker Studio dan mengikuti akses pada laporan sumber.</p><a id="moduleFallbackLink" href="https://datastudio.google.com/embed/reporting/b860005c-7a54-4e99-905b-c4e43c72aa3d/page/wOQsF" target="_blank" rel="noopener">Dashboard tidak tampil? Buka langsung ↗</a></div>
+      </section>
+      <div class="dashboard-information land-information">
+        <article><span>01</span><div><small>LIVE SOURCE</small><h3>Looker Studio</h3><p>Visualisasi ditampilkan langsung tanpa menyimpan dataset di repository publik.</p></div></article>
+        <article><span>02</span><div><small>UPDATE</small><h3>Mengikuti sumber data</h3><p>Perubahan spreadsheet atau konektor laporan akan muncul pada dashboard.</p></div></article>
+        <article><span>03</span><div><small>ACCESS</small><h3>Sesuai izin laporan</h3><p>Pengguna perlu login apabila laporan dibatasi untuk akun tertentu.</p></div></article>
+      </div>
+    </div></section>
+  </main>
+  <footer class="sub-footer"><div class="container"><span>© 2026 1DEA</span><span>Nursery</span></div></footer>
+  <script src="../module-live.js?v=20260707-1"></script>
+</body>
+</html>
