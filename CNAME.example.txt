@@ -1,0 +1,6 @@
+enviroamc.com
+
+PETUNJUK:
+1. Jangan rename file ini menjadi CNAME sebelum domain ditambahkan di Settings > Pages > Custom domain.
+2. Setelah custom domain disimpan di GitHub, GitHub biasanya membuat file CNAME otomatis.
+3. Pastikan DNS domain diarahkan sesuai petunjuk resmi GitHub Pages.
