@@ -95,13 +95,13 @@ button{font:inherit}
 
 /* Official AlamTri Geo logo */
 .brand{gap:0}
-.brand-logo-shell{display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.97);border:1px solid rgba(255,255,255,.45);border-radius:13px;padding:7px 11px;box-shadow:0 10px 30px rgba(0,31,40,.15);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
-.brand:hover .brand-logo-shell{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,31,40,.22)}
+.brand-logo-shell{display:inline-flex;align-items:center;justify-content:center;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;transition:transform .25s ease}
+.brand:hover .brand-logo-shell{transform:translateY(-2px);box-shadow:none}
 .brand-logo{display:block;width:184px;height:auto;object-fit:contain}
-.site-header.scrolled .brand-logo-shell,.sub-header .brand-logo-shell{border-color:var(--line);box-shadow:0 8px 24px rgba(0,47,61,.08)}
-.footer-brand .brand-logo-shell{padding:9px 13px;border-radius:14px}
+.site-header.scrolled .brand-logo-shell,.sub-header .brand-logo-shell{border-color:transparent;box-shadow:none}
+.footer-brand .brand-logo-shell{padding:0;border-radius:0}
 .footer-brand .brand-logo{width:205px}
 .footer-official-logo{align-self:start;justify-self:end;display:inline-flex;padding:10px 14px;background:#fff;border-radius:15px;box-shadow:0 14px 35px rgba(0,0,0,.18)}
 .footer-official-logo img{display:block;width:220px;height:auto}
 @media (max-width:1050px){.footer-official-logo{justify-self:start}}
-@media (max-width:560px){.brand-logo-shell{padding:6px 9px;border-radius:11px}.brand-logo{width:145px}.footer-brand .brand-logo{width:175px}.footer-official-logo img{width:185px}}
+@media (max-width:560px){.brand-logo-shell{padding:0;border-radius:0}.brand-logo{width:145px}.footer-brand .brand-logo{width:175px}.footer-official-logo img{width:185px}}
