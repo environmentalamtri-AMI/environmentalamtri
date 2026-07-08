@@ -1056,3 +1056,159 @@ button{font:inherit}
     height:68px;
   }
 }
+
+
+/* =========================================================
+   Editorial numbering system — About, Workflow, Roadmap
+   Replaces decorative icons with restrained sequence markers.
+   ========================================================= */
+.feature-strip article{
+  grid-template-columns:42px 1fr!important;
+  gap:18px!important;
+  align-items:start!important;
+}
+.feature-index{
+  position:relative;
+  display:inline-flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  min-height:42px;
+  padding-top:12px;
+  color:var(--teal-900);
+  font-size:18px;
+  line-height:1;
+  font-weight:850;
+  letter-spacing:-.04em;
+  font-variant-numeric:tabular-nums;
+}
+.feature-index:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:22px;
+  height:2px;
+  border-radius:999px;
+  background:var(--orange);
+}
+.feature-strip article:nth-child(2) .feature-index,
+.feature-strip article:nth-child(3) .feature-index{
+  color:var(--teal-800);
+}
+.feature-strip h3{
+  margin:0 0 8px!important;
+}
+
+.flow-step{
+  grid-template-columns:58px 1fr!important;
+  gap:20px!important;
+  align-items:center!important;
+}
+.flow-index{
+  position:relative;
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid rgba(0,63,82,.09);
+  color:var(--teal-900)!important;
+  font-size:17px!important;
+  line-height:1;
+  font-weight:900!important;
+  letter-spacing:-.03em;
+  font-variant-numeric:tabular-nums;
+  box-shadow:0 10px 24px rgba(0,63,82,.06);
+}
+.flow-index:after{
+  content:"";
+  position:absolute;
+  bottom:8px;
+  width:14px;
+  height:2px;
+  border-radius:999px;
+  background:var(--orange);
+}
+.flow-step.active .flow-index,
+.flow-step:hover .flow-index{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.18);
+  color:#fff!important;
+  box-shadow:none;
+}
+.flow-step.active .flow-index:after,
+.flow-step:hover .flow-index:after{
+  background:#ff9a36;
+}
+
+.roadmap-card{
+  padding-top:28px!important;
+}
+.roadmap-stage{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:27px;
+  padding-bottom:15px;
+  border-bottom:1px solid var(--line);
+}
+.roadmap-stage span{
+  color:#809398;
+  font-size:8px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.roadmap-stage strong{
+  color:var(--orange);
+  font-size:20px;
+  line-height:1;
+  font-weight:850;
+  letter-spacing:-.04em;
+  font-variant-numeric:tabular-nums;
+}
+.roadmap-card h3{
+  margin-top:0!important;
+}
+
+@media(max-width:820px){
+  .feature-strip article{
+    grid-template-columns:38px 1fr!important;
+  }
+  .flow-step{
+    grid-template-columns:54px 1fr!important;
+  }
+  .flow-index{
+    width:54px;
+    height:54px;
+    border-radius:16px;
+  }
+}
+
+@media(max-width:560px){
+  .feature-strip article{
+    padding:25px 22px!important;
+    grid-template-columns:34px 1fr!important;
+    gap:15px!important;
+  }
+  .feature-index{
+    min-height:36px;
+    font-size:16px;
+  }
+  .flow-step{
+    grid-template-columns:48px 1fr!important;
+    gap:14px!important;
+    padding:17px!important;
+  }
+  .flow-index{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    font-size:15px!important;
+  }
+  .roadmap-stage{
+    margin-bottom:22px;
+  }
+}
