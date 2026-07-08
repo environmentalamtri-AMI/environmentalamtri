@@ -1516,3 +1516,76 @@ html.gsap-active .hero-module-jump{
   html.gsap-active .roadmap-card,
   html.gsap-active .feature-strip article{will-change:auto!important}
 }
+
+
+/* =========================================================
+   Intro section overflow fix — tablet & mobile only (2026-07-08)
+   Keeps module cards horizontally swipeable while locking the
+   Tentang 1DEA section to the viewport width.
+   ========================================================= */
+@media (max-width:820px){
+  .intro,
+  .intro > .container,
+  .intro-grid,
+  .intro .section-heading,
+  .intro-copy,
+  .intro-tags,
+  .intro .feature-strip{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .intro{
+    overflow-x:clip !important;
+  }
+
+  @supports not (overflow:clip){
+    .intro{overflow-x:hidden !important;}
+  }
+
+  .intro-grid > *{
+    min-width:0 !important;
+  }
+
+  .intro .section-heading h2,
+  .intro-copy > p{
+    max-width:100% !important;
+    overflow-wrap:anywhere;
+  }
+
+  .intro-tags{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    overflow:visible !important;
+    padding-right:0 !important;
+    padding-bottom:0 !important;
+    overscroll-behavior-x:none !important;
+  }
+
+  .intro-tags span{
+    flex:0 1 auto !important;
+    max-width:100% !important;
+    white-space:normal !important;
+    text-align:center;
+  }
+
+  .intro .feature-strip,
+  .intro .feature-strip article{
+    transform:none;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+}
+
+@media (max-width:560px){
+  .intro-tags{
+    gap:7px !important;
+  }
+
+  .intro-tags span{
+    font-size:7.5px !important;
+    line-height:1.25 !important;
+    padding:7px 9px !important;
+  }
+}

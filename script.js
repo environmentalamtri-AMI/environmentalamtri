@@ -250,9 +250,10 @@ function initGsapAnimations() {
       scrollTrigger: { start: 'top 94%' },
     });
 
-    // Intro section.
-    fromScroll('.intro .section-heading', { x: -26, y: 12 }, '.intro');
-    fromScroll('.intro .intro-copy', { x: 26, y: 12 }, '.intro');
+    // Intro section. Horizontal movement is desktop-only to prevent mobile page overflow.
+    const compactViewport = window.matchMedia('(max-width: 820px)').matches;
+    fromScroll('.intro .section-heading', { x: compactViewport ? 0 : -26, y: compactViewport ? 18 : 12 }, '.intro');
+    fromScroll('.intro .intro-copy', { x: compactViewport ? 0 : 26, y: compactViewport ? 18 : 12 }, '.intro');
     fromScroll('.feature-strip article', { y: 26 }, '.feature-strip', {
       stagger: 0.11,
       duration: 0.72,
