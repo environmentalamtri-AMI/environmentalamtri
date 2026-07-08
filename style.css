@@ -1212,3 +1212,34 @@ button{font:inherit}
     margin-bottom:22px;
   }
 }
+
+
+/* =========================================================
+   GSAP Scroll Animation Layer — Stage 1
+   ========================================================= */
+html.gsap-active .reveal{
+  transition:none!important;
+}
+html.gsap-active .module-card,
+html.gsap-active .flow-step,
+html.gsap-active .roadmap-card,
+html.gsap-active .feature-strip article{
+  will-change:transform,opacity;
+}
+html.gsap-active .module-photo{
+  will-change:transform;
+}
+@media (prefers-reduced-motion: reduce){
+  html.gsap-active .reveal,
+  html.gsap-active .module-card,
+  html.gsap-active .flow-step,
+  html.gsap-active .roadmap-card,
+  html.gsap-active .feature-strip article,
+  html.gsap-active .module-photo{
+    opacity:1!important;
+    visibility:visible!important;
+    transform:none!important;
+    animation:none!important;
+    transition:none!important;
+  }
+}
