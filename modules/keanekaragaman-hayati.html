@@ -1,5 +1,137 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#003f52" name="theme-color"/><title>Keanekaragaman Hayati — 1DEA</title><link href="../assets/alamtri-geo-mark.png" rel="icon" type="image/png"/><link href="../style.css?v=20260707-3" rel="stylesheet"/><link href="../subpage.css?v=20260707-6" rel="stylesheet"/></head><body>
-<header class="sub-header"><div class="container sub-nav"><a aria-label="AlamTri Geo — 1DEA" class="brand" href="../index.html"><span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="../assets/alamtri-geo-logo.png" width="184"/></span></a><nav class="sub-nav-links"><a href="../dashboard.html">Dashboard</a><a href="../database.html">Database</a><a href="../index.html#roadmap">Roadmap</a></nav><a class="sub-back" href="../dashboard.html">← Dashboard</a></div></header>
-<main class="sub-main"><section class="sub-hero"><div class="container sub-hero-grid"><div><span class="sub-pill">Biodiversity</span><h1>Keanekaragaman Hayati</h1><p>Mengelola informasi program konservasi, habitat, spesies flora-fauna, dan dokumentasi kegiatan.</p></div><div class="sub-hero-panel"><small>MODULE STATUS</small><strong>Interface Ready</strong><span>Siap dihubungkan dengan data aktual dan autentikasi.</span></div></div></section>
-<section class="content-section"><div class="container content-grid"><article class="panel"><h2>Fungsi modul</h2><p>Mengelola informasi program konservasi, habitat, spesies flora-fauna, dan dokumentasi kegiatan.</p><ul class="feature-list"><li>Program konservasi</li><li>Database flora dan fauna</li><li>Monitoring habitat</li><li>Dokumentasi kegiatan</li></ul><h3 style="margin-top:28px">Struktur data utama</h3><table class="data-table"><thead><tr><th>Program</th><th>Lokasi</th><th>Spesies</th><th>Periode</th><th>Status</th></tr></thead><tbody><tr><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><div class="notice">Data contoh sengaja tidak ditampilkan untuk menjaga keamanan. Sambungkan modul ini ke database setelah autentikasi dan hak akses tersedia.</div></article><aside class="panel"><h3>Alur pengelolaan</h3><div class="status-line"><span>Input data</span><b class="status-badge">Draft</b></div><div class="status-line"><span>Validasi</span><b class="status-badge">Review</b></div><div class="status-line"><span>Persetujuan</span><b class="status-badge">Approve</b></div><div class="status-line"><span>Dashboard</span><b class="status-badge">Publish</b></div></aside></div></section></main><footer class="sub-footer"><div class="container"><span>© 2026 1DEA</span><span>Keanekaragaman Hayati</span></div></footer></body></html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#003f52" name="theme-color"/>
+<meta name="description" content="Modul Biodiversity 1DEA: ringkasan keanekaragaman hayati, spesies prioritas, arboretum, nursery, dan konservasi rusa sambar Alamtri Geo."/>
+<title>Biodiversity Alamtri Geo — 1DEA</title>
+<link href="../assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
+<link href="../style.css?v=20260708-module-swipe-fix-1" rel="stylesheet"/>
+<link href="../subpage.css?v=20260708-biodiversity-1" rel="stylesheet"/>
+<link href="../biodiversity.css?v=20260708-1" rel="stylesheet"/>
+</head>
+<body class="bio-page">
+<header class="sub-header bio-header">
+  <div class="container sub-nav">
+    <a aria-label="AlamTri Geo — 1DEA" class="brand" href="../index.html">
+      <span class="brand-logo-shell"><img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="../assets/alamtri-geo-logo.png" width="184"/></span>
+    </a>
+    <nav class="sub-nav-links bio-nav-links">
+      <a href="#overview">Overview</a><a href="#species">Spesies</a><a href="#programs">Program</a><a href="#status">Status Konservasi</a>
+    </nav>
+    <a class="sub-back" href="../index.html#modules">← Modul 1DEA</a>
+  </div>
+</header>
+<main class="sub-main bio-main">
+  <section class="bio-hero" id="overview">
+    <img class="bio-hero-image" src="../assets/biodiversity/hero-rusa.webp" alt="Rusa sambar pada program konservasi Alamtri Geo"/>
+    <div class="bio-hero-overlay"></div>
+    <div class="container bio-hero-content">
+      <div class="bio-hero-copy">
+        <span class="bio-kicker"><i></i> BIODIVERSITY ALAMTRI GEO</span>
+        <h1>Jejak kehidupan dari <em>hutan tropis Kalimantan.</em></h1>
+        <p>Portal ringkas untuk menjelajahi spesies flora-fauna, status konservasi, dan program pemulihan ekosistem di wilayah Alamtri Geo.</p>
+        <div class="bio-hero-actions"><a href="#species" class="bio-btn bio-btn-primary">Jelajahi Spesies <b>↘</b></a><a href="#programs" class="bio-btn bio-btn-ghost">Program Konservasi</a></div>
+      </div>
+      <aside class="bio-hero-facts">
+        <span>Basis data buku 2026</span>
+        <strong>295</strong>
+        <p>spesies tercatat dalam tujuh kelompok utama.</p>
+        <div><b>90</b><small>Flora</small></div><div><b>78</b><small>Avifauna</small></div><div><b>77</b><small>Herpetofauna</small></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bio-section bio-overview-section">
+    <div class="container">
+      <div class="bio-section-heading">
+        <div><span>RINGKASAN INVENTARISASI</span><h2>Satu portal untuk memahami keragaman hayati.</h2></div>
+        <p>Buku mencatat 295 spesies dari hasil observasi, pemantauan lingkungan, dan studi keanekaragaman hayati di wilayah kerja Alamtri Geo.</p>
+      </div>
+      <div class="bio-stat-grid">
+        <button class="bio-stat-card" data-filter-group="Flora"><b>01</b><strong>90</strong><span>Flora</span><small>38 famili</small></button>
+        <button class="bio-stat-card" data-filter-group="Primata"><b>02</b><strong>6</strong><span>Primata</span><small>Spesies arboreal</small></button>
+        <button class="bio-stat-card" data-filter-group="Mamalia"><b>03</b><strong>25</strong><span>Mamalia</span><small>Nonprimata</small></button>
+        <button class="bio-stat-card" data-filter-group="Amfibi"><b>04</b><strong>33</strong><span>Amfibi</span><small>Herpetofauna</small></button>
+        <button class="bio-stat-card" data-filter-group="Reptil"><b>05</b><strong>44</strong><span>Reptil</span><small>Herpetofauna</small></button>
+        <button class="bio-stat-card" data-filter-group="Nekton"><b>06</b><strong>19</strong><span>Nekton</span><small>Ekosistem perairan</small></button>
+        <button class="bio-stat-card" data-filter-group="Avifauna"><b>07</b><strong>78</strong><span>Avifauna</span><small>Burung hutan</small></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bio-section bio-species-section" id="species">
+    <div class="container">
+      <div class="bio-section-heading bio-species-heading">
+        <div><span>SPECIES EXPLORER — TAHAP 1</span><h2>Spesies prioritas dan bernilai konservasi.</h2></div>
+        <p>Katalog awal menampilkan pilihan spesies prioritas. Katalog lengkap 295 spesies dapat ditambahkan bertahap menggunakan struktur data yang sama.</p>
+      </div>
+      <div class="bio-commandbar">
+        <label class="bio-search"><span>⌕</span><input id="bioSearch" type="search" placeholder="Cari nama lokal, ilmiah, atau famili…" autocomplete="off"/></label>
+        <div class="bio-filter-row" id="bioGroupFilters">
+          <button class="is-active" data-group="Semua">Semua</button><button data-group="Flora">Flora</button><button data-group="Primata">Primata</button><button data-group="Mamalia">Mamalia</button><button data-group="Reptil">Reptil</button><button data-group="Nekton">Nekton</button><button data-group="Avifauna">Avifauna</button>
+        </div>
+        <div class="bio-filter-row bio-status-filter" id="bioStatusFilters">
+          <button class="is-active" data-status="Semua">Semua status</button><button data-status="CR">CR</button><button data-status="EN">EN</button><button data-status="VU">VU</button><button data-status="Dilindungi">Dilindungi</button><button data-status="Endemik">Endemik</button>
+        </div>
+      </div>
+      <div class="bio-result-line"><span id="bioResultCount">0 spesies ditampilkan</span><small>Status mengikuti Buku Keanekaragaman Hayati Alamtri Geo 2026 dan memerlukan pembaruan berkala.</small></div>
+      <div class="bio-species-grid" id="bioSpeciesGrid"></div>
+      <div class="bio-empty" id="bioEmpty" hidden><strong>Tidak ada hasil yang sesuai.</strong><span>Coba gunakan kata kunci atau filter lain.</span></div>
+    </div>
+  </section>
+
+  <section class="bio-section bio-programs-section" id="programs">
+    <div class="container">
+      <div class="bio-section-heading light">
+        <div><span>PROGRAM KONSERVASI</span><h2>Dari bank genetik hingga perlindungan satwa.</h2></div>
+        <p>Tiga program menghubungkan konservasi, pembibitan lokal, reklamasi, edukasi, dan pemulihan ekosistem.</p>
+      </div>
+      <div class="bio-program-grid">
+        <article class="bio-program-card bio-program-featured"><img src="../assets/biodiversity/program-arboretum.webp" alt="Kawasan Arboretum PT Maruwai Coal"/><div><span>01 · KONSERVASI FLORA</span><h3>Arboretum</h3><p>Koleksi dan pelestarian tumbuhan lokal, sumber benih reklamasi, laboratorium lapangan, serta bank genetik untuk restorasi ekosistem.</p><ul><li>Plasma nutfah lokal</li><li>Sumber benih</li><li>Riset & edukasi</li></ul></div></article>
+        <article class="bio-program-card"><img src="../assets/biodiversity/program-rusa.webp" alt="Rusa sambar di PT Maruwai Coal"/><div><span>02 · KONSERVASI FAUNA</span><h3>Penangkaran Rusa Sambar</h3><p>Konservasi ex-situ dengan pengelolaan pakan, kesehatan, reproduksi, animal welfare, dan peluang restocking.</p><ul><li>Perlindungan populasi</li><li>Animal welfare</li><li>Edukasi lingkungan</li></ul></div></article>
+        <article class="bio-program-card"><img src="../assets/biodiversity/program-nursery.webp" alt="Fasilitas nursery PT Maruwai Coal"/><div><span>03 · PEMULIHAN EKOSISTEM</span><h3>Nursery & Revegetasi</h3><p>Penyediaan bibit berkualitas untuk penanaman bertahap dan berkelanjutan pada area reklamasi.</p><div class="bio-program-metrics"><b>±0,2 ha<small>Luas nursery</small></b><b>60.000<small>Bibit/siklus</small></b><b>10.000<small>Target/bulan</small></b></div></div></article>
+      </div>
+      <div class="bio-workflow">
+        <div><b>01</b><span>Pembibitan</span></div><i></i><div><b>02</b><span>Seleksi bibit</span></div><i></i><div><b>03</b><span>Penyiapan lahan</span></div><i></i><div><b>04</b><span>Pengangkutan</span></div><i></i><div><b>05</b><span>Penanaman</span></div><i></i><div><b>06</b><span>Pemeliharaan</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bio-section bio-status-section" id="status">
+    <div class="container bio-status-layout">
+      <div><span class="bio-eyebrow">MEMBACA STATUS KONSERVASI</span><h2>Badge yang membantu menentukan prioritas.</h2><p>Informasi konservasi di dalam buku menggabungkan IUCN Red List, CITES, dan perlindungan nasional. Setiap sistem memiliki fungsi yang berbeda.</p></div>
+      <div class="bio-status-cards">
+        <article><b class="badge cr">CR</b><h3>Critically Endangered</h3><p>Risiko kepunahan sangat tinggi dan memerlukan perhatian prioritas.</p></article>
+        <article><b class="badge en">EN</b><h3>Endangered</h3><p>Berisiko tinggi mengalami kepunahan di alam.</p></article>
+        <article><b class="badge vu">VU</b><h3>Vulnerable</h3><p>Menghadapi risiko kepunahan jika tekanan terus berlangsung.</p></article>
+        <article><b class="badge legal">D</b><h3>Dilindungi</h3><p>Tercantum sebagai tumbuhan atau satwa yang dilindungi dalam rujukan nasional buku.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bio-source-note">
+    <div class="container"><div><span>SUMBER DATA</span><h2>Buku Keanekaragaman Hayati Alamtri Geo 2026</h2><p>Konten tahap pertama diekstrak dari buku dan disusun ulang untuk pengalaman web. Nama ilmiah, status konservasi, dan informasi regulasi perlu melalui quality assurance sebelum katalog lengkap dipublikasikan.</p></div><a href="#species">Kembali ke katalog ↑</a></div>
+  </section>
+</main>
+<footer class="sub-footer bio-footer"><div class="container"><span>© 2026 1DEA — Environment Department</span><span>Biodiversity Alamtri Geo</span></div></footer>
+
+<div class="bio-modal" id="bioModal" hidden aria-hidden="true">
+  <button class="bio-modal-backdrop" data-close-modal aria-label="Tutup detail spesies"></button>
+  <article class="bio-modal-card" role="dialog" aria-modal="true" aria-labelledby="bioModalTitle">
+    <button class="bio-modal-close" data-close-modal aria-label="Tutup">×</button>
+    <div class="bio-modal-image"><img id="bioModalImage" alt=""/></div>
+    <div class="bio-modal-content">
+      <span id="bioModalGroup"></span><h2 id="bioModalTitle"></h2><em id="bioModalScientific"></em>
+      <div class="bio-modal-badges" id="bioModalBadges"></div>
+      <p id="bioModalSummary"></p>
+      <dl><div><dt>Famili</dt><dd id="bioModalFamily"></dd></div><div><dt>Habitat</dt><dd id="bioModalHabitat"></dd></div><div><dt>Persebaran</dt><dd id="bioModalDistribution"></dd></div><div><dt>Catatan</dt><dd id="bioModalDetail"></dd></div></dl>
+      <small id="bioModalSource"></small>
+    </div>
+  </article>
+</div>
+<script src="../data/biodiversity-species.js?v=20260708-1"></script>
+<script src="../biodiversity.js?v=20260708-1"></script>
+</body>
+</html>
