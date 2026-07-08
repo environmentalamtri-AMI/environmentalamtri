@@ -959,3 +959,100 @@ button{font:inherit}
     margin-top:30px !important;
   }
 }
+
+
+/* =========================================================
+   Responsive AlamTri Geo logo system (2026-07-07)
+   - Monochrome logo on dark hero/footer
+   - Full-color logo on light scrolled header
+   - Removed duplicate logo block in footer
+   ========================================================= */
+.header-brand .brand-logo-shell{
+  position:relative;
+  width:184px;
+  height:66px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+.header-brand .brand-logo{
+  position:absolute;
+  inset:0 auto auto 0;
+  width:184px;
+  height:66px;
+  object-fit:contain;
+  object-position:left center;
+  transition:opacity .28s ease,transform .28s ease;
+}
+.header-brand .brand-logo-light{
+  opacity:1;
+  transform:translateY(0);
+}
+.header-brand .brand-logo-dark{
+  opacity:0;
+  transform:translateY(2px);
+}
+.site-header.scrolled .header-brand .brand-logo-light{
+  opacity:0;
+  transform:translateY(-2px);
+}
+.site-header.scrolled .header-brand .brand-logo-dark{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.site-footer .footer-main{
+  grid-template-columns:1.35fr .65fr .65fr;
+  align-items:start;
+}
+.site-footer .footer-brand-logo .brand-logo-shell{
+  width:210px;
+  height:76px;
+}
+.site-footer .brand-logo-footer{
+  width:210px;
+  height:76px;
+  object-fit:contain;
+  object-position:left center;
+}
+.site-footer .footer-brand p{
+  margin-top:18px;
+}
+.footer-official-logo{
+  display:none!important;
+}
+
+@media (max-width:1050px){
+  .site-footer .footer-main{
+    grid-template-columns:1.2fr .7fr .7fr;
+  }
+}
+@media (max-width:820px){
+  .site-footer .footer-main{
+    grid-template-columns:1fr 1fr;
+  }
+  .site-footer .footer-brand{
+    grid-column:1/-1;
+  }
+}
+@media (max-width:560px){
+  .header-brand .brand-logo-shell{
+    width:150px;
+    height:58px;
+  }
+  .header-brand .brand-logo{
+    width:150px;
+    height:58px;
+  }
+  .site-footer .footer-main{
+    grid-template-columns:1fr;
+  }
+  .site-footer .footer-brand{
+    grid-column:auto;
+  }
+  .site-footer .footer-brand-logo .brand-logo-shell,
+  .site-footer .brand-logo-footer{
+    width:190px;
+    height:68px;
+  }
+}
