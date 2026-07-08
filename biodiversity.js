@@ -39,9 +39,21 @@
   function render(){
     const items = filtered();
     grid.innerHTML = items.map((item,index) => `
-      <button class="bio-species-card" data-species-id="${esc(item.id)}">
-        <span class="bio-species-image"><img loading="lazy" decoding="async" src="${esc(item.image)}" alt="${esc(item.local)}"><i class="bio-species-index">${String(index+1).padStart(2,'0')}</i></span>
-        <span class="bio-species-body"><span>${esc(item.group)}</span><h3>${esc(item.local)}</h3><em>${esc(item.scientific)}</em><p>${esc(item.summary)}</p><span class="bio-card-badges">${badges(item)}</span></span>
+      <button class="bio-species-card" data-species-id="${esc(item.id)}" aria-label="Lihat detail spesies ${esc(item.local)}">
+        <span class="bio-species-image">
+          <img loading="lazy" decoding="async" src="${esc(item.image)}" alt="${esc(item.local)}">
+          <span class="bio-species-shade" aria-hidden="true"></span>
+          <i class="bio-species-index">${String(index+1).padStart(2,'0')}</i>
+          <span class="bio-species-overlay">
+            <span class="bio-species-group">${esc(item.group)}</span>
+            <h3>${esc(item.local)}</h3>
+            <em>${esc(item.scientific)}</em>
+            <p>${esc(item.summary)}</p>
+            <span class="bio-card-badges">${badges(item)}</span>
+            <span class="bio-detail-cue">Lihat detail <b>↗</b></span>
+          </span>
+        </span>
+        <span class="bio-species-body"><span>${esc(item.group)}</span><h3>${esc(item.local)}</h3><em>${esc(item.scientific)}</em><p>${esc(item.summary)}</p><span class="bio-card-badges">${badges(item)}</span><span class="bio-detail-cue">Lihat detail <b>↗</b></span></span>
       </button>`).join('');
     count.textContent = `${items.length} spesies ditampilkan`;
     empty.hidden = items.length !== 0;
