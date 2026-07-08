@@ -33,6 +33,18 @@ window.addEventListener('resize', () => {
   }
 });
 
+const resetHorizontalViewport = () => {
+  document.documentElement.scrollLeft = 0;
+  document.body.scrollLeft = 0;
+};
+
+window.addEventListener('pageshow', resetHorizontalViewport);
+window.addEventListener('load', resetHorizontalViewport, { once: true });
+window.addEventListener('orientationchange', () => setTimeout(resetHorizontalViewport, 120));
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 1050) resetHorizontalViewport();
+}, { passive: true });
+
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const hasGsap = Boolean(window.gsap && window.ScrollTrigger);
 
@@ -273,15 +285,15 @@ function initGsapAnimations() {
     });
 
     // Workflow section.
-    fromScroll('.workflow-copy', { x: -32, y: 10 }, '.workflow');
-    fromScroll('.workflow-flow .flow-step', { x: 30, y: 0 }, '.workflow-flow', {
+    fromScroll('.workflow-copy', { x: compactViewport ? 0 : -32, y: compactViewport ? 18 : 10 }, '.workflow');
+    fromScroll('.workflow-flow .flow-step', { x: compactViewport ? 0 : 30, y: compactViewport ? 18 : 0 }, '.workflow-flow', {
       duration: 0.68,
       stagger: 0.11,
     });
 
     // Coverage.
     fromScroll('.coverage-card', { y: 34, scale: 0.99 }, '.coverage-card');
-    fromScroll('.company-cards article', { x: 24, y: 0 }, '.company-cards', {
+    fromScroll('.company-cards article', { x: compactViewport ? 0 : 24, y: compactViewport ? 16 : 0 }, '.company-cards', {
       duration: 0.65,
       stagger: 0.11,
     });

@@ -1764,3 +1764,183 @@ html.gsap-active .hero-module-jump{
     line-height:1.55 !important;
   }
 }
+
+
+/* =========================================================
+   Global tablet/mobile viewport overflow fix (2026-07-08)
+   Locks the document to the viewport while preserving the
+   intentional horizontal swipe inside Modul Utama.
+   ========================================================= */
+@media (max-width:1050px){
+  html,
+  body{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin:0 !important;
+    overflow-x:hidden !important;
+    position:relative !important;
+  }
+
+  @supports (overflow:clip){
+    html,
+    body{overflow-x:clip !important;}
+  }
+
+  body > main,
+  main,
+  .site-header,
+  .hero,
+  .intro,
+  .modules,
+  .workflow,
+  .coverage,
+  .roadmap,
+  .cta,
+  .site-footer{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    overflow-x:clip !important;
+  }
+
+  .container,
+  .nav-shell,
+  .hero-layout,
+  .hero-copy,
+  .hero-module-slider,
+  .slider-frame,
+  .hero-slides,
+  .intro-grid,
+  .section-heading,
+  .intro-copy,
+  .feature-strip,
+  .section-top,
+  .workflow-layout,
+  .workflow-copy,
+  .workflow-flow,
+  .coverage-card,
+  .company-cards,
+  .roadmap-grid,
+  .cta-shell,
+  .footer-main,
+  .footer-bottom{
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  img,
+  svg,
+  video,
+  canvas,
+  iframe{
+    max-width:100% !important;
+  }
+
+  .hero-grid-bg,
+  .hero-glow,
+  .petal-stack,
+  .modules:before,
+  .cta-petals{
+    pointer-events:none !important;
+  }
+
+  /* Mobile/tablet animation must not leave horizontal transforms. */
+  html.gsap-active .hero-copy,
+  html.gsap-active .hero-module-slider,
+  html.gsap-active .intro .section-heading,
+  html.gsap-active .intro-copy,
+  html.gsap-active .workflow-copy,
+  html.gsap-active .flow-step,
+  html.gsap-active .company-cards article,
+  html.gsap-active .roadmap-card,
+  html.gsap-active .feature-strip article{
+    translate:none !important;
+  }
+
+  /* The only intentional horizontal scroll area. */
+  .modules{
+    overflow-x:clip !important;
+  }
+  .modules .container{
+    overflow:visible !important;
+  }
+  .module-grid{
+    overscroll-behavior-x:contain !important;
+    -webkit-overflow-scrolling:touch !important;
+    touch-action:pan-x pan-y !important;
+    contain:layout paint !important;
+  }
+  .module-grid > *{
+    min-width:0;
+  }
+}
+
+@media (max-width:820px){
+  .container{
+    width:calc(100% - 32px) !important;
+    margin-inline:auto !important;
+  }
+
+  .hero-layout,
+  .intro-grid,
+  .workflow-layout,
+  .coverage-card,
+  .roadmap-grid,
+  .cta-shell,
+  .footer-main{
+    width:100% !important;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .section-top h2,
+  .workflow h2,
+  .coverage h2,
+  .centered h2,
+  .hero-copy > p,
+  .intro-copy > p,
+  .section-top > p{
+    max-width:100% !important;
+    overflow-wrap:break-word !important;
+    word-break:normal !important;
+  }
+}
+
+@media (max-width:560px){
+  .container{
+    width:calc(100% - 32px) !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .site-header{
+    left:0 !important;
+    right:0 !important;
+  }
+
+  .hero-actions,
+  .hero-proof,
+  .hero-module-slider,
+  .intro-tags,
+  .feature-strip,
+  .workflow-flow,
+  .company-cards,
+  .roadmap-grid{
+    width:100% !important;
+  }
+
+  .hero-actions .btn{
+    max-width:100% !important;
+  }
+
+  /* Keep the swipe track edge-to-edge inside the module section only. */
+  .modules .module-grid{
+    width:calc(100% + 32px) !important;
+    max-width:none !important;
+    margin-left:-16px !important;
+    margin-right:-16px !important;
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+}
