@@ -1589,3 +1589,79 @@ html.gsap-active .hero-module-jump{
     padding:7px 9px !important;
   }
 }
+
+
+/* =========================================================
+   Mobile Tentang cards — match Cara Kerja visual rhythm
+   ========================================================= */
+@media (max-width:560px){
+  .intro .feature-strip{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+    margin-top:30px !important;
+    padding:0 !important;
+    background:transparent !important;
+    border:0 !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    overflow:visible !important;
+  }
+
+  .intro .feature-strip article{
+    display:grid !important;
+    grid-template-columns:48px 1fr !important;
+    align-items:center !important;
+    gap:14px !important;
+    min-height:118px !important;
+    padding:16px !important;
+    background:#fff !important;
+    border:1px solid var(--line) !important;
+    border-radius:18px !important;
+    box-shadow:0 10px 28px rgba(0,54,67,.055) !important;
+  }
+
+  .intro .feature-strip article:last-child{
+    border:1px solid var(--line) !important;
+  }
+
+  .intro .feature-index{
+    position:relative !important;
+    width:48px !important;
+    height:48px !important;
+    min-height:48px !important;
+    padding:0 !important;
+    display:grid !important;
+    place-items:center !important;
+    border-radius:14px !important;
+    background:var(--teal-900) !important;
+    color:#fff !important;
+    font-size:15px !important;
+    font-weight:900 !important;
+    box-shadow:0 9px 22px rgba(0,63,82,.14) !important;
+  }
+
+  .intro .feature-index:before{
+    content:"" !important;
+    position:absolute !important;
+    left:50% !important;
+    top:auto !important;
+    bottom:8px !important;
+    width:14px !important;
+    height:2px !important;
+    transform:translateX(-50%) !important;
+    background:var(--orange) !important;
+  }
+
+  .intro .feature-strip h3{
+    margin:0 0 5px !important;
+    font-size:17px !important;
+    line-height:1.25 !important;
+  }
+
+  .intro .feature-strip p{
+    margin:0 !important;
+    font-size:12px !important;
+    line-height:1.55 !important;
+  }
+}
