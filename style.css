@@ -1243,3 +1243,19 @@ html.gsap-active .module-photo{
     transition:none!important;
   }
 }
+
+
+/* =========================================================
+   GSAP stability fix — persistent visibility
+   Prevents reveal elements from returning to opacity:0 after
+   animation cleanup and keeps primary hero actions accessible.
+   ========================================================= */
+html.gsap-active .reveal{
+  opacity:1;
+  visibility:visible;
+  transform:none;
+}
+html.gsap-active .hero-actions > *,
+html.gsap-active .hero-module-jump{
+  visibility:visible;
+}
