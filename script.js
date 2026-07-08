@@ -483,3 +483,9 @@ switchButtons.forEach(button => button.addEventListener('click', () => {
   show(0);
   start();
 })();
+
+
+// Keep Modul Utama swipe native on touch devices.
+document.querySelectorAll('.modules .module-grid img').forEach((img) => {
+  img.setAttribute('draggable', 'false');
+});

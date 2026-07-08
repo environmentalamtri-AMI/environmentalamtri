@@ -1944,3 +1944,74 @@ html.gsap-active .hero-module-jump{
     padding-right:16px !important;
   }
 }
+
+
+/* =========================================================
+   Restore Modul Utama horizontal swipe on tablet/mobile
+   while keeping the document viewport locked.
+   ========================================================= */
+@media (max-width:820px){
+  .modules{
+    overflow:hidden !important;
+  }
+
+  .modules > .container{
+    width:100% !important;
+    max-width:100% !important;
+    margin-inline:0 !important;
+    overflow:hidden !important;
+  }
+
+  .modules .section-top{
+    width:calc(100% - 32px) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .modules .module-grid{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    padding:0 16px 14px !important;
+
+    overflow-x:scroll !important;
+    overflow-y:hidden !important;
+    -webkit-overflow-scrolling:touch !important;
+    overscroll-behavior-x:contain !important;
+    scroll-snap-type:x mandatory !important;
+    scroll-padding-inline:16px !important;
+
+    touch-action:pan-x !important;
+    contain:none !important;
+    pointer-events:auto !important;
+    scrollbar-width:none !important;
+  }
+
+  .modules .module-grid::-webkit-scrollbar{
+    display:none !important;
+  }
+
+  .modules .module-card,
+  .modules .module-card.large{
+    flex:0 0 min(84vw, 430px) !important;
+    width:min(84vw, 430px) !important;
+    min-width:min(84vw, 430px) !important;
+    max-width:min(84vw, 430px) !important;
+    scroll-snap-align:start !important;
+    scroll-snap-stop:normal !important;
+  }
+}
+
+@media (min-width:821px) and (max-width:1050px){
+  .modules{
+    overflow:hidden !important;
+  }
+
+  .modules .module-grid{
+    overflow:visible !important;
+    touch-action:auto !important;
+    contain:none !important;
+  }
+}
