@@ -1259,3 +1259,260 @@ html.gsap-active .hero-actions > *,
 html.gsap-active .hero-module-jump{
   visibility:visible;
 }
+
+
+/* =========================================================
+   Dedicated tablet + mobile composition (2026-07-08)
+   Desktop rules above remain unchanged.
+   ========================================================= */
+
+/* Tablet landscape / compact desktop */
+@media (min-width:821px) and (max-width:1050px){
+  .container{width:min(100% - 48px,900px)}
+  .nav-shell{height:78px}
+  .header-brand .brand-logo-shell,
+  .header-brand .brand-logo{width:164px;height:60px}
+  .main-nav{gap:20px}
+  .main-nav a{font-size:12px}
+
+  .hero{
+    min-height:auto!important;
+    padding:118px 0 112px!important;
+  }
+  .hero-layout{
+    grid-template-columns:1fr!important;
+    gap:46px!important;
+  }
+  .hero-copy{max-width:720px}
+  .hero h1{font-size:58px!important;line-height:1!important}
+  .hero-copy>p{max-width:660px;font-size:16px}
+  .hero-actions{margin-bottom:12px}
+  .hero-proof{margin-top:30px}
+  .hero-module-slider{max-width:780px!important;margin:0 auto!important}
+  .hero-module-slider .hero-slides{height:500px!important}
+  .hero-module-slider .hero-slide-content{bottom:88px!important}
+  .integration-status{margin-top:-70px!important;padding:0 24px!important}
+  .integration-status-shell{grid-template-columns:1.2fr 1fr 1fr!important}
+  .status-source{grid-column:1/-1!important}
+
+  .intro{padding:70px 0 82px!important}
+  .intro-grid{grid-template-columns:1fr 1fr!important;gap:48px!important;align-items:start!important}
+  .section-heading h2,.section-top h2,.workflow h2,.coverage h2,.centered h2{font-size:44px!important}
+  .feature-strip{grid-template-columns:repeat(3,1fr)!important}
+  .feature-strip article{padding:28px 22px!important}
+
+  .module-grid{grid-template-columns:1fr 1fr!important;gap:18px!important}
+  .module-card,.module-card.large{min-height:340px!important;grid-row:auto!important}
+  .module-card.large{grid-column:1/-1!important;min-height:390px!important}
+  .module-copy h3,.module-card.large .module-copy h3{font-size:32px!important}
+
+  .workflow-layout{grid-template-columns:1fr!important;gap:42px!important}
+  .workflow-copy{max-width:760px;position:relative!important;top:auto!important}
+  .workflow-flow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .flow-step{min-height:142px}
+
+  .coverage-card{grid-template-columns:1fr!important;gap:36px!important;padding:48px!important}
+  .company-cards{grid-template-columns:1fr 1fr!important}
+
+  .roadmap-grid{grid-template-columns:1fr 1fr!important;gap:18px!important}
+  .roadmap-card:last-child{grid-column:1/-1}
+  .cta-shell{grid-template-columns:1fr .72fr!important;padding:56px 48px!important}
+}
+
+/* Tablet portrait and large phones */
+@media (min-width:561px) and (max-width:820px){
+  .container{width:min(100% - 36px,720px)}
+  .nav-shell{height:72px}
+  .header-brand .brand-logo-shell,
+  .header-brand .brand-logo{width:154px;height:56px}
+
+  .hero{padding:102px 0 72px!important}
+  .hero-layout{grid-template-columns:1fr!important;gap:34px!important}
+  .hero h1{font-size:50px!important;line-height:1!important}
+  .hero-copy>p{font-size:15px!important;max-width:640px}
+  .hero-actions{display:flex!important;gap:10px!important}
+  .hero-actions .btn{width:auto!important}
+  .hero-proof{margin-top:26px!important}
+  .hero-module-slider{max-width:690px!important;margin:0 auto!important}
+  .hero-module-slider .hero-slides{height:430px!important}
+  .hero-module-slider .hero-slide-content{bottom:76px!important;max-width:82%!important}
+  .hero-module-slider .hero-slide-content h2{font-size:38px!important}
+  .integration-status{display:none!important}
+
+  .intro{padding:58px 0 70px!important}
+  .intro-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .section-heading h2,.section-top h2,.workflow h2,.coverage h2,.centered h2{font-size:40px!important}
+  .feature-strip{grid-template-columns:1fr!important;margin-top:32px!important}
+  .feature-strip article{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .feature-strip article:last-child{border-bottom:0!important}
+
+  .module-grid{grid-template-columns:1fr 1fr!important;gap:16px!important}
+  .module-card,.module-card.large{min-height:310px!important;grid-row:auto!important;grid-column:auto!important;padding:24px!important}
+  .module-copy h3,.module-card.large .module-copy h3{font-size:28px!important}
+  .module-copy p{font-size:13px!important}
+
+  .workflow-layout{grid-template-columns:1fr!important;gap:34px!important}
+  .workflow-copy{position:relative!important;top:auto!important}
+  .workflow-flow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .flow-step{min-height:138px;padding:18px!important}
+
+  .coverage-card{grid-template-columns:1fr!important;gap:30px!important;padding:40px 30px!important}
+  .company-cards{grid-template-columns:1fr!important}
+
+  .roadmap-grid{grid-template-columns:1fr!important;gap:14px!important}
+  .roadmap-card{padding:25px!important}
+  .cta-shell{grid-template-columns:1fr!important;padding:48px 34px!important;gap:30px!important}
+
+  .site-footer .footer-main{grid-template-columns:1.15fr .8fr .8fr!important;gap:28px!important}
+  .site-footer .footer-brand{grid-column:auto!important}
+}
+
+/* Handphone */
+@media (max-width:560px){
+  .container{width:min(100% - 26px,520px)!important}
+  .nav-shell{height:68px!important}
+  .header-brand .brand-logo-shell,
+  .header-brand .brand-logo{width:142px!important;height:52px!important}
+  .menu-toggle{width:44px!important;height:44px!important}
+  .main-nav{
+    position:fixed!important;
+    top:76px!important;
+    left:13px!important;
+    right:13px!important;
+    max-height:calc(100vh - 92px);
+    overflow:auto;
+    border-radius:20px!important;
+    padding:12px!important;
+    box-shadow:0 24px 70px rgba(0,31,40,.24)!important;
+  }
+  .main-nav a{min-height:46px;display:flex;align-items:center;padding:12px 15px!important}
+  body.menu-open{overflow:hidden}
+
+  .hero{
+    min-height:auto!important;
+    padding:92px 0 42px!important;
+  }
+  .hero-layout{grid-template-columns:1fr!important;gap:26px!important}
+  .hero-kicker{font-size:9px!important;letter-spacing:.12em!important;margin-bottom:15px!important}
+  .hero h1{font-size:38px!important;line-height:1.02!important;letter-spacing:-.045em!important;margin-bottom:16px!important}
+  .hero-copy>p{font-size:14px!important;line-height:1.65!important;margin-bottom:20px!important}
+  .hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;margin-bottom:12px!important}
+  .hero-actions .btn{width:100%!important;min-height:48px!important}
+  .hero-module-jump{display:inline-flex!important;margin:0 0 18px!important;font-size:10px!important}
+  .hero-proof{margin-top:18px!important;display:grid!important;grid-template-columns:repeat(3,1fr)!important;width:100%!important}
+  .hero-proof>div{padding:0 10px!important;text-align:center!important}
+  .hero-proof>div:first-child{padding-left:0!important}
+  .hero-proof>div:last-child{padding-right:0!important}
+  .hero-proof strong{font-size:22px!important}
+  .hero-proof span{font-size:7px!important;letter-spacing:.09em!important}
+
+  .hero-module-slider{margin:0!important;width:100%!important}
+  .hero-module-slider .hero-slides{height:344px!important;border-radius:22px!important}
+  .hero-module-slider .slider-frame{border-radius:22px!important}
+  .hero-module-slider .slider-topbar{top:10px!important;left:10px!important;right:10px!important;height:38px!important;padding:0 11px!important;border-radius:12px!important}
+  .hero-module-slider .slider-live{font-size:7px!important}
+  .hero-module-slider .slider-count b{font-size:13px!important}
+  .hero-module-slider .hero-slide-content{left:18px!important;right:18px!important;bottom:62px!important;max-width:88%!important}
+  .hero-module-slider .slide-eyebrow{display:none!important}
+  .hero-module-slider .hero-slide-content h2{font-size:28px!important;line-height:1!important;margin-bottom:8px!important}
+  .hero-module-slider .hero-slide-content p{font-size:11.5px!important;line-height:1.45!important;margin-bottom:10px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hero-module-slider .slide-meta{display:none!important}
+  .hero-module-slider .slide-link{font-size:10px!important}
+  .hero-module-slider .slide-number{width:34px!important;height:34px!important;font-size:11px!important;right:12px!important;top:58px!important}
+  .hero-module-slider .slider-arrow{display:none!important}
+  .hero-module-slider .slider-footer{left:10px!important;right:10px!important;bottom:10px!important;height:42px!important;padding:0 8px!important;border-radius:12px!important}
+  .hero-module-slider .slider-tab{min-height:34px!important;padding:6px 2px!important}
+  .hero-module-slider .slider-tab span{display:none!important}
+  .hero-module-slider .slider-tab i{width:7px!important;height:7px!important}
+  .integration-status{display:none!important}
+
+  .section{padding:58px 0!important}
+  .intro{padding:44px 0 58px!important}
+  .intro-grid{grid-template-columns:1fr!important;gap:22px!important}
+  .section-heading h2,.section-top h2,.workflow h2,.coverage h2,.centered h2{font-size:34px!important;line-height:1.08!important}
+  .intro-copy>p{font-size:15px!important;line-height:1.72!important}
+  .intro-tags{margin-top:20px!important;gap:7px!important;flex-wrap:nowrap!important;overflow-x:auto!important;padding-bottom:4px!important;scrollbar-width:none}
+  .intro-tags::-webkit-scrollbar{display:none}
+  .intro-tags span{white-space:nowrap!important;font-size:8px!important;padding:7px 10px!important}
+  .feature-strip{grid-template-columns:1fr!important;margin-top:28px!important;border-radius:20px!important}
+  .feature-strip article{padding:21px 18px!important;grid-template-columns:32px 1fr!important;gap:13px!important;border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .feature-strip article:last-child{border-bottom:0!important}
+  .feature-strip h3{font-size:17px!important;margin-bottom:4px!important}
+  .feature-strip p{font-size:12px!important;line-height:1.55!important}
+
+  .modules{overflow:hidden}
+  .section-top{gap:16px!important;margin-bottom:28px!important}
+  .section-top p{font-size:14px!important;line-height:1.65!important}
+  .module-grid{
+    display:flex!important;
+    grid-template-columns:none!important;
+    gap:14px!important;
+    overflow-x:auto!important;
+    scroll-snap-type:x mandatory!important;
+    padding:0 13px 12px!important;
+    margin:0!important;
+    width:100%!important;
+    max-width:none!important;
+    scrollbar-width:none;
+  }
+  .module-grid::-webkit-scrollbar{display:none}
+  .module-card,.module-card.large{
+    flex:0 0 84vw!important;
+    min-height:292px!important;
+    height:292px!important;
+    grid-row:auto!important;
+    grid-column:auto!important;
+    padding:22px!important;
+    scroll-snap-align:center!important;
+    border-radius:22px!important;
+  }
+  .module-copy{max-width:92%!important}
+  .module-copy h3,.module-card.large .module-copy h3{font-size:27px!important;line-height:1.02!important}
+  .module-copy p{font-size:12px!important;line-height:1.5!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .module-copy small{font-size:9px!important}
+  .module-number{font-size:10px!important}
+
+  .workflow-layout{grid-template-columns:1fr!important;gap:28px!important}
+  .workflow-copy{position:relative!important;top:auto!important}
+  .workflow-copy>p{font-size:14px!important;line-height:1.7!important}
+  .workflow-flow{display:block!important;position:relative!important;padding-left:10px}
+  .workflow-flow:before{content:"";position:absolute;left:33px;top:28px;bottom:28px;width:1px;background:rgba(255,255,255,.14)}
+  .flow-step{grid-template-columns:48px 1fr!important;min-height:auto!important;padding:16px!important;margin-bottom:10px!important;gap:14px!important}
+  .flow-step:last-child{margin-bottom:0!important}
+  .flow-step h3{font-size:17px!important}
+  .flow-step p{font-size:12px!important;line-height:1.5!important}
+  .flow-step small{font-size:8px!important}
+
+  .coverage-card{grid-template-columns:1fr!important;gap:26px!important;padding:32px 22px!important;border-radius:24px!important}
+  .coverage-copy p{font-size:14px!important}
+  .company-cards{grid-template-columns:1fr!important;gap:10px!important}
+  .company-cards article{grid-template-columns:46px 1fr auto!important;padding:15px!important}
+  .company-cards article>span{width:46px!important;height:46px!important}
+
+  .roadmap-grid{grid-template-columns:1fr!important;gap:12px!important}
+  .roadmap-card{padding:22px!important;border-radius:20px!important}
+  .roadmap-stage{margin-bottom:16px!important;padding-bottom:11px!important}
+  .roadmap-card h3{font-size:21px!important}
+  .roadmap-card p{font-size:13px!important;line-height:1.55!important}
+  .roadmap-card .timeline{display:none!important}
+  .roadmap-card>small{display:inline-flex!important;margin-top:14px!important;padding:6px 9px!important;border-radius:999px!important;background:rgba(0,63,82,.06)!important}
+
+  .cta-shell{grid-template-columns:1fr!important;gap:24px!important;padding:38px 24px!important;border-radius:24px!important}
+  .cta-shell h2{font-size:38px!important}
+  .cta-side .btn{width:100%!important}
+
+  .site-footer{padding-top:54px!important}
+  .site-footer .footer-main{grid-template-columns:1fr 1fr!important;gap:28px 18px!important}
+  .site-footer .footer-brand{grid-column:1/-1!important}
+  .site-footer .footer-brand-logo .brand-logo-shell,
+  .site-footer .brand-logo-footer{width:170px!important;height:60px!important}
+  .site-footer .footer-brand p{margin-top:12px!important;max-width:300px!important;font-size:12px!important}
+  .site-footer h4{font-size:9px!important;margin-bottom:12px!important}
+  .site-footer a{font-size:12px!important;margin-bottom:8px!important}
+  .footer-bottom{padding:22px 0!important;gap:5px!important;font-size:9px!important}
+
+  html.gsap-active .module-card,
+  html.gsap-active .flow-step,
+  html.gsap-active .roadmap-card,
+  html.gsap-active .feature-strip article{will-change:auto!important}
+}

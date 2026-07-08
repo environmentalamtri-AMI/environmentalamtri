@@ -9,12 +9,29 @@ window.addEventListener('scroll', updateHeader, { passive: true });
 menuToggle?.addEventListener('click', () => {
   const isOpen = mainNav?.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+  document.body.classList.toggle('menu-open', Boolean(isOpen));
 });
 
 document.querySelectorAll('.main-nav a').forEach(link => link.addEventListener('click', () => {
   mainNav?.classList.remove('open');
   menuToggle?.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
 }));
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  mainNav?.classList.remove('open');
+  menuToggle?.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 820) {
+    mainNav?.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
+});
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const hasGsap = Boolean(window.gsap && window.ScrollTrigger);
