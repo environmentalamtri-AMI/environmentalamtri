@@ -2015,3 +2015,147 @@ html.gsap-active .hero-module-jump{
     contain:none !important;
   }
 }
+
+
+/* =========================================================
+   Mobile CTA + Coverage composition fix (2026-07-08)
+   Keeps all inner content inside the card, removes residual
+   GSAP transforms on mobile, and tightens vertical spacing.
+   Desktop/tablet landscape remain unchanged.
+   ========================================================= */
+@media (max-width:560px){
+  /* Reduce the excessive gap after Roadmap. */
+  .roadmap{
+    padding-bottom:34px !important;
+  }
+
+  .cta-section{
+    padding:0 0 64px !important;
+  }
+
+  /* Coverage: consistent 24px inner inset and no translated children. */
+  .coverage{
+    padding-top:42px !important;
+    padding-bottom:58px !important;
+  }
+
+  .coverage-card{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:0 !important;
+    height:auto !important;
+    padding:34px 24px 32px !important;
+    gap:24px !important;
+    align-items:start !important;
+    transform:none !important;
+    translate:none !important;
+    overflow:hidden !important;
+  }
+
+  .coverage-card > *,
+  .coverage-copy,
+  .coverage-copy > *,
+  .company-cards{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    transform:none !important;
+    translate:none !important;
+  }
+
+  .coverage-copy .eyebrow{
+    margin:0 0 14px !important;
+    padding:0 !important;
+  }
+
+  .coverage h2{
+    margin:0 !important;
+    font-size:36px !important;
+    line-height:1.05 !important;
+    letter-spacing:-.04em !important;
+    overflow-wrap:normal !important;
+  }
+
+  .coverage-copy p{
+    margin:18px 0 0 !important;
+    font-size:14px !important;
+    line-height:1.68 !important;
+  }
+
+  .company-cards{
+    gap:10px !important;
+  }
+
+  .company-cards article{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    transform:none !important;
+    translate:none !important;
+  }
+
+  /* CTA: compact card with a true 24px inner gutter. */
+  .cta-shell{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:0 !important;
+    height:auto !important;
+    padding:38px 24px 36px !important;
+    gap:22px !important;
+    align-items:start !important;
+    transform:none !important;
+    translate:none !important;
+    overflow:hidden !important;
+  }
+
+  .cta-shell > *:not(.cta-petals),
+  .cta-shell > div:not(.cta-petals),
+  .cta-side,
+  .cta-side > *{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    transform:none !important;
+    translate:none !important;
+  }
+
+  .cta-shell .eyebrow{
+    margin:0 0 14px !important;
+    padding:0 !important;
+  }
+
+  .cta-shell h2{
+    margin:0 !important;
+    font-size:36px !important;
+    line-height:1.04 !important;
+    letter-spacing:-.042em !important;
+    overflow-wrap:normal !important;
+  }
+
+  .cta-side{
+    margin-top:0 !important;
+  }
+
+  .cta-side p{
+    margin:0 0 22px !important;
+    font-size:14px !important;
+    line-height:1.65 !important;
+  }
+
+  .cta-side .btn{
+    width:100% !important;
+    min-height:50px !important;
+    margin:0 !important;
+  }
+
+  /* Decorative petals add height/overflow but little value on phones. */
+  .cta-petals{
+    display:none !important;
+  }
+}
