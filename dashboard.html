@@ -12,40 +12,40 @@
 <link href="subpage.css?v=20260707-11" rel="stylesheet"/>
 
 <style>
-  .dashboard-entity-groups{display:grid;gap:24px;margin-top:28px;margin-bottom:24px}
-  .entity-group{background:rgba(255,255,255,.62);border:1px solid rgba(0,63,82,.08);border-radius:28px;padding:22px 22px 18px;box-shadow:0 20px 50px rgba(0,40,53,.06);backdrop-filter:blur(10px)}
-  .entity-group-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
-  .entity-group-header h3{margin:0 0 6px;color:#082d3a;font-size:1.08rem;line-height:1.2}
-  .entity-group-header p{margin:0;color:#5e7079;font-size:.92rem;line-height:1.55;max-width:640px}
-  .entity-badge{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#0a3f52}
-  .entity-badge i{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-style:normal;font-size:1rem;font-weight:900}
+  .dashboard-entity-groups{display:grid;gap:16px;margin-top:24px;margin-bottom:24px}
+  .entity-group{background:#fff;border:1px solid rgba(0,63,82,.08);border-radius:22px;padding:18px;box-shadow:0 8px 24px rgba(0,40,53,.04)}
+  .entity-group-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(0,63,82,.08)}
+  .entity-group-header h3{margin:6px 0 2px;color:#082d3a;font-size:1rem;line-height:1.2}
+  .entity-group-header p{margin:0;color:#6b7b83;font-size:.86rem;line-height:1.5;max-width:560px}
+  .entity-badge{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#0a3f52}
+  .entity-badge i{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;font-style:normal;font-size:.82rem;font-weight:900}
   .entity-badge.mc i{background:#ffeddc;color:#f18b34}
   .entity-badge.lc i{background:#e7efdf;color:#799b56}
   .entity-badge.integrated i{background:#e1eef1;color:#0a7e8c}
-  .entity-count{display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:10px 12px;border-radius:999px;background:#f4f7f7;color:#5f727a;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-  .entity-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .entity-count{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border-radius:999px;background:#f6f8f8;color:#62747b;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(0,63,82,.06)}
+  .entity-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
   .entity-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
   .entity-grid.one{grid-template-columns:minmax(0,1fr)}
-  .dashboard-choice{position:relative;display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;padding:18px 18px 16px;border-radius:22px;border:1px solid rgba(0,63,82,.1);background:rgba(255,255,255,.85);transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;overflow:hidden;min-height:148px}
-  .dashboard-choice:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,63,82,.08);border-color:rgba(0,63,82,.18)}
-  .dashboard-choice.active{background:linear-gradient(145deg,#005b70 0%, #003f52 100%);box-shadow:0 18px 36px rgba(0,63,82,.20);border-color:rgba(0,63,82,.3)}
+  .dashboard-choice{position:relative;display:flex;flex-direction:column;gap:10px;align-items:flex-start;text-align:left;padding:14px;border-radius:18px;border:1px solid rgba(0,63,82,.08);background:#fff;transition:border-color .2s ease, box-shadow .2s ease, background .2s ease;overflow:hidden;min-height:118px}
+  .dashboard-choice:hover{box-shadow:0 8px 18px rgba(0,63,82,.06);border-color:rgba(0,63,82,.14)}
+  .dashboard-choice.active{background:#0a5b70;border-color:#0a5b70;box-shadow:0 10px 24px rgba(0,63,82,.14)}
   .dashboard-choice.active small,.dashboard-choice.active strong,.dashboard-choice.active em,.dashboard-choice.active b,.dashboard-choice.active .entity-chip{color:#fff}
-  .dashboard-choice.active .entity-chip{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.18)}
-  .dashboard-choice.active .choice-icon{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.16)}
+  .dashboard-choice.active .entity-chip{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.16)}
+  .dashboard-choice.active .choice-icon{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.14)}
   .dashboard-choice.active .choice-icon svg{stroke:#fff;fill:none}
-  .choice-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;width:100%}
-  .choice-meta{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
-  .choice-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
-  .choice-copy small{font-size:.68rem;letter-spacing:.12em;font-weight:800;color:#f18b34;text-transform:uppercase}
-  .choice-copy strong{font-size:1.08rem;line-height:1.2;color:#092d39}
-  .choice-copy em{font-style:normal;font-size:.86rem;color:#63737c}
-  .choice-index{position:absolute;right:16px;bottom:14px;font-size:.76rem;font-weight:800;letter-spacing:.08em;color:#b0bcc1}
-  .entity-chip{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:999px;background:#f4f7f7;border:1px solid rgba(0,63,82,.08);font-size:.7rem;font-weight:800;letter-spacing:.08em;color:#4f646c;text-transform:uppercase;white-space:nowrap}
-  .choice-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;border:1px solid rgba(0,63,82,.08);background:#f4f7f7;flex-shrink:0}
-  .choice-icon svg{width:22px;height:22px;stroke:#0a3f52;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .choice-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;width:100%}
+  .choice-meta{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+  .choice-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+  .choice-copy small{font-size:.64rem;letter-spacing:.12em;font-weight:800;color:#f18b34;text-transform:uppercase}
+  .choice-copy strong{font-size:.98rem;line-height:1.22;color:#092d39}
+  .choice-copy em{font-style:normal;font-size:.8rem;color:#6b7a82}
+  .choice-index{position:absolute;right:14px;bottom:12px;font-size:.7rem;font-weight:800;letter-spacing:.08em;color:#b0bcc1}
+  .entity-chip{display:inline-flex;align-items:center;justify-content:center;padding:5px 8px;border-radius:999px;background:#f6f8f8;border:1px solid rgba(0,63,82,.06);font-size:.66rem;font-weight:800;letter-spacing:.08em;color:#53676f;text-transform:uppercase;white-space:nowrap}
+  .choice-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;border:1px solid rgba(0,63,82,.08);background:#f6f8f8;flex-shrink:0}
+  .choice-icon svg{width:18px;height:18px;stroke:#0a3f52;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;fill:none}
   .water-icon{background:#e6f4f6}.land-icon{background:#eef3e5}.waste-icon{background:#f7efe9}.nursery-icon{background:#edf5e9}.incident-icon{background:#fdf0e7}
   @media (max-width: 1200px){.entity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.entity-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
-  @media (max-width: 740px){.entity-group{padding:18px}.entity-group-header{flex-direction:column;align-items:flex-start}.entity-grid,.entity-grid.three{grid-template-columns:1fr}.dashboard-choice{min-height:unset}.choice-index{position:static;align-self:flex-end;margin-top:2px}}
+  @media (max-width: 740px){.entity-group{padding:16px;border-radius:18px}.entity-group-header{flex-direction:column;align-items:flex-start}.entity-grid,.entity-grid.three{grid-template-columns:1fr}.dashboard-choice{min-height:unset;padding:14px}.choice-index{position:static;align-self:flex-end;margin-top:4px}}
 </style>
 
 </head>
@@ -102,10 +102,10 @@
     <div class="entity-group-header">
       <div>
         <span class="entity-badge mc"><i>MC</i> PT Maruwai Coal</span>
-        <h3 id="group-mc-title">Dashboard operasional PT Maruwai Coal</h3>
-        <p>Kelompok dashboard untuk pemantauan kualitas air, bukaan lahan &amp; reklamasi, pengelolaan limbah B3, dan nursery di entitas Maruwai Coal.</p>
+        <h3 id="group-mc-title">PT Maruwai Coal</h3>
+        <p>Water, land, limbah B3, dan nursery.</p>
       </div>
-      <span class="entity-count">4 dashboard</span>
+      <span class="entity-count">4 modul</span>
     </div>
     <div class="entity-grid" role="tablist" aria-label="Dashboard PT Maruwai Coal">
       <button aria-selected="true" class="dashboard-choice active" data-dashboard="sp-mc" data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Maruwai Coal." data-kicker="WATER MANAGEMENT · PT MARUWAI COAL" data-title="Settling Pond PT Maruwai Coal" data-url="https://datastudio.google.com/embed/reporting/7cd14e65-1203-4f05-bd2c-1559be68d1e1/page/p_wdab9zmxud" role="tab" type="button">
@@ -155,10 +155,10 @@
     <div class="entity-group-header">
       <div>
         <span class="entity-badge lc"><i>LC</i> PT Lahai Coal</span>
-        <h3 id="group-lc-title">Dashboard operasional PT Lahai Coal</h3>
-        <p>Kelompok dashboard untuk pemantauan settling pond, bukaan lahan &amp; reklamasi, serta pengelolaan limbah B3 di entitas Lahai Coal.</p>
+        <h3 id="group-lc-title">PT Lahai Coal</h3>
+        <p>Water, land, dan limbah B3.</p>
       </div>
-      <span class="entity-count">3 dashboard</span>
+      <span class="entity-count">3 modul</span>
     </div>
     <div class="entity-grid three" role="tablist" aria-label="Dashboard PT Lahai Coal">
       <button aria-selected="false" class="dashboard-choice" data-dashboard="sp-lc" data-description="Pemantauan kualitas air, debit, dan performa settling pond PT Lahai Coal." data-kicker="WATER MANAGEMENT · PT LAHAI COAL" data-title="Settling Pond PT Lahai Coal" data-url="https://datastudio.google.com/embed/reporting/06eb00c8-ef88-4930-95c2-755a7936554f/page/p_wdab9zmxud" role="tab" type="button">
@@ -198,10 +198,10 @@
     <div class="entity-group-header">
       <div>
         <span class="entity-badge integrated"><i>∞</i> Integrated</span>
-        <h3 id="group-integrated-title">Dashboard lintas entitas</h3>
-        <p>Ringkasan terintegrasi untuk pemantauan insiden lingkungan yang relevan bagi kedua perusahaan.</p>
+        <h3 id="group-integrated-title">Lintas entitas</h3>
+        <p>Ringkasan insiden lingkungan terintegrasi.</p>
       </div>
-      <span class="entity-count">1 dashboard</span>
+      <span class="entity-count">1 modul</span>
     </div>
     <div class="entity-grid one" role="tablist" aria-label="Dashboard terintegrasi">
       <button aria-selected="false" class="dashboard-choice" data-dashboard="incident" data-description="Ringkasan kategori, tren, lokasi, dan status tindak lanjut insiden lingkungan." data-kicker="ENVIRONMENTAL INCIDENT · INTEGRATED" data-title="Insiden Lingkungan" data-url="https://datastudio.google.com/embed/reporting/7cecc486-ae8b-4942-822c-1c7d6e2043d5/page/wOQsF" role="tab" type="button">
