@@ -2317,3 +2317,48 @@ html.gsap-active .hero-module-jump{
   .contour-a{right:-30%;top:18%}
   .polygon-a{left:5%;bottom:23%}
 }
+
+/* =========================================================
+   WebGIS landing refinements — July 2026
+   - Keep seven hero tabs on one row
+   - Use a standard-size WebGIS module card
+   ========================================================= */
+.hero-module-slider .slider-tabs{
+  grid-template-columns:repeat(7,minmax(0,1fr))!important;
+  gap:3px!important;
+}
+.hero-module-slider .slider-tab{
+  min-width:0!important;
+  padding-left:2px!important;
+  padding-right:2px!important;
+}
+.hero-module-slider .slider-tab span{
+  display:block;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:8px;
+}
+
+.module-card.photo-webgis{
+  --photo-accent:rgba(23,184,177,.42);
+}
+.module-card.webgis-cover-card::before{
+  background:
+    linear-gradient(180deg,rgba(0,24,32,.02) 0%,rgba(0,24,32,.08) 48%,rgba(0,22,30,.24) 100%)!important;
+}
+.module-card.webgis-cover-card::after{
+  background:linear-gradient(115deg,rgba(255,255,255,.08),transparent 38%)!important;
+}
+.module-card.webgis-cover-card .module-photo{
+  object-position:center;
+  filter:saturate(.96) contrast(1.04) brightness(.9);
+}
+.module-card.webgis-cover-card:hover .module-photo{
+  filter:saturate(1.02) contrast(1.06) brightness(.94);
+}
+
+@media (max-width:820px){
+  .hero-module-slider .slider-tab span{display:none!important}
+}
