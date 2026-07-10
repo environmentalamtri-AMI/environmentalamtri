@@ -50,7 +50,7 @@
 <a class="btn btn-orange" href="dashboard.html">Buka Dashboard <span>↗</span></a>
 <a class="btn btn-ghost btn-input" href="database.html">Input Data <span>↗</span></a>
 </div>
-<a class="hero-module-jump" href="#modul">Jelajahi enam modul utama <span>↓</span></a>
+<a class="hero-module-jump" href="#modul">Jelajahi tujuh modul utama <span>↓</span></a>
 <div class="hero-proof">
 <div><strong data-count="2">2</strong><span>Perusahaan</span></div>
 <div><strong data-count="9">9</strong><span>Database</span></div>
@@ -61,7 +61,7 @@
 <div class="slider-frame">
 <div class="slider-topbar">
 <span class="slider-live"><i></i> MODUL TERHUBUNG</span>
-<div class="slider-count"><b data-slider-current="">01</b><em>/06</em></div>
+<div class="slider-count"><b data-slider-current="">01</b><em>/07</em></div>
 </div>
 <div aria-live="polite" class="hero-slides">
 <a class="hero-slide is-active" data-slide="0" href="modules/bukaan-lahan-reklamasi.html">
@@ -129,7 +129,20 @@
 </div>
 <span class="slide-number">05</span>
 </a>
-<a aria-hidden="true" class="hero-slide" data-slide="5" href="modules/insiden-lingkungan.html" tabindex="-1">
+<a aria-hidden="true" class="hero-slide" data-slide="5" href="dashboard.html#webgis-reklamasi-mc" tabindex="-1">
+<img alt="WebGIS reklamasi berbasis ArcGIS" decoding="async" src="assets/modules/module-webgis-reklamasi.png"/>
+<span class="hero-slide-shade"></span>
+<span aria-hidden="true" class="slide-orbit"></span>
+<div class="hero-slide-content">
+<span class="slide-eyebrow">SPATIAL INTELLIGENCE</span>
+<h2>WebGIS<br/>Reklamasi</h2>
+<p>Eksplorasi lokasi, luasan, status, dan progres reklamasi melalui peta interaktif berbasis ArcGIS.</p>
+<div class="slide-meta"><span>PT Maruwai Coal</span><span>ArcGIS WebGIS</span></div>
+<strong class="slide-link">Buka WebGIS <i>↗</i></strong>
+</div>
+<span class="slide-number">06</span>
+</a>
+<a aria-hidden="true" class="hero-slide" data-slide="6" href="modules/insiden-lingkungan.html" tabindex="-1">
 <img alt="Penanganan insiden lingkungan di area pertambangan" decoding="async" src="assets/modules/module-insiden-lingkungan.webp"/>
 <span class="hero-slide-shade"></span>
 <span aria-hidden="true" class="slide-orbit"></span>
@@ -140,7 +153,7 @@
 <div class="slide-meta"><span>Integrated Overview</span></div>
 <strong class="slide-link">Jelajahi modul <i>↗</i></strong>
 </div>
-<span class="slide-number">06</span>
+<span class="slide-number">07</span>
 </a>
 </div>
 <button aria-label="Modul sebelumnya" class="slider-arrow slider-prev" type="button"><span>←</span></button>
@@ -152,7 +165,8 @@
 <button aria-label="Pengelolaan Limbah B3" aria-selected="false" class="slider-tab" data-slide-to="2" role="tab" type="button"><i></i><span>B3</span></button>
 <button aria-label="Nursery" aria-selected="false" class="slider-tab" data-slide-to="3" role="tab" type="button"><i></i><span>Nursery</span></button>
 <button aria-label="Keanekaragaman Hayati" aria-selected="false" class="slider-tab" data-slide-to="4" role="tab" type="button"><i></i><span>Biodiv.</span></button>
-<button aria-label="Insiden Lingkungan" aria-selected="false" class="slider-tab" data-slide-to="5" role="tab" type="button"><i></i><span>Incident</span></button>
+<button aria-label="WebGIS Reklamasi" aria-selected="false" class="slider-tab" data-slide-to="5" role="tab" type="button"><i></i><span>WebGIS</span></button>
+<button aria-label="Insiden Lingkungan" aria-selected="false" class="slider-tab" data-slide-to="6" role="tab" type="button"><i></i><span>Incident</span></button>
 </div>
 <div aria-hidden="true" class="slider-progress"><i></i></div>
 </div>
@@ -249,27 +263,8 @@
     <a class="spatial-action" href="dashboard.html#webgis-reklamasi-mc">Buka WebGIS <i>↗</i></a>
   </div>
   <div class="spatial-visual" aria-hidden="true">
-    <div class="map-topbar">
-      <span><i></i> RECLAMATION WEBGIS</span>
-      <b>LIVE</b>
-    </div>
-    <div class="map-canvas">
-      <span class="map-contour contour-a"></span>
-      <span class="map-contour contour-b"></span>
-      <span class="map-contour contour-c"></span>
-      <span class="map-polygon polygon-a"></span>
-      <span class="map-polygon polygon-b"></span>
-      <span class="map-road road-a"></span>
-      <span class="map-road road-b"></span>
-      <span class="map-pin pin-a"><i></i></span>
-      <span class="map-pin pin-b"><i></i></span>
-      <span class="map-pin pin-c"><i></i></span>
-      <div class="map-info-card">
-        <small>AREA REKLAMASI</small>
-        <strong>Spatial Monitoring</strong>
-        <span>Lokasi · Luasan · Status · Progres</span>
-      </div>
-      <div class="map-scale"><i></i><span>0</span><span>250 m</span></div>
+    <div class="spatial-preview-frame">
+      <img class="spatial-preview-image" src="assets/modules/module-webgis-reklamasi.png" alt="Preview WebGIS Reklamasi" loading="lazy" decoding="async"/>
     </div>
   </div>
 </div>

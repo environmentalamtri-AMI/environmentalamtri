@@ -2125,6 +2125,31 @@ html.gsap-active .hero-module-jump{
   pointer-events:none;
   z-index:2;
 }
+.spatial-preview-frame{
+  position:relative;
+  height:100%;
+  min-height:278px;
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 24px 50px rgba(0,15,22,.22);
+  background:linear-gradient(145deg,#0a6770,#07505e 58%,#0b3d4d);
+}
+.spatial-preview-frame:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,25,33,.18));
+  pointer-events:none;
+}
+.spatial-preview-image{
+  width:100%;
+  height:100%;
+  min-height:278px;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
 .map-topbar{
   position:absolute;
   z-index:5;
@@ -2287,9 +2312,7 @@ html.gsap-active .hero-module-jump{
   .spatial-meta span{font-size:7px;padding:6px 8px}
   .spatial-action{margin-top:22px;width:100%}
   .spatial-visual{padding:0 14px 14px;min-height:245px}
-  .map-canvas{min-height:245px;border-radius:18px}
-  .map-topbar{left:28px;right:28px;top:14px;height:38px}
-  .map-info-card{left:14px;right:14px;bottom:14px;min-width:0}
+  .spatial-preview-frame,.spatial-preview-image{min-height:245px;border-radius:18px}
   .map-scale{display:none}
   .contour-a{right:-30%;top:18%}
   .polygon-a{left:5%;bottom:23%}
