@@ -8,7 +8,7 @@
 <meta content="#003f52" name="theme-color"/>
 <title>1DEA — One Data Environment Alamtri</title>
 <link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
-<link href="style.css?v=20260708-module-swipe-fix-1" rel="stylesheet"/>
+<link href="style.css?v=20260710-spatial-intelligence-1" rel="stylesheet"/>
 </head>
 <body>
 <div aria-hidden="true" class="grain"></div>
@@ -172,7 +172,7 @@
 <div class="status-item"><small>Pembaruan portal</small><strong>7 Juli 2026</strong></div>
 <div class="status-item"><small>Database terhubung</small><strong>9 sumber aktif</strong></div>
 <div class="status-item"><small>Dashboard</small><strong>9 laporan aktif</strong></div>
-<div class="status-item status-source"><small>Sumber data</small><strong>Google Sheets · Looker Studio</strong></div>
+<div class="status-item status-source"><small>Sumber data</small><strong>Google Sheets · Looker Studio · ArcGIS</strong></div>
 </div>
 </section>
 <section class="intro section" id="tentang">
@@ -234,6 +234,44 @@
 <div class="module-copy"><span>ENVIRONMENTAL INCIDENT</span><h3>Insiden Lingkungan</h3><p>Kategori kejadian, lokasi, tingkat risiko, status tindak lanjut, dan tren insiden lingkungan.</p><small>Dashboard insiden terintegrasi</small></div>
 <b class="module-arrow">↗</b>
 </a>
+</div>
+
+<div class="container spatial-intelligence reveal" aria-labelledby="spatial-title">
+  <div class="spatial-copy">
+    <span class="spatial-eyebrow">SPATIAL INTELLIGENCE</span>
+    <h3 id="spatial-title">WebGIS Reklamasi</h3>
+    <p>Eksplorasi lokasi, luasan, status, dan progres reklamasi melalui peta interaktif berbasis ArcGIS.</p>
+    <div class="spatial-meta">
+      <span>PT Maruwai Coal</span>
+      <span>ArcGIS Experience Builder</span>
+      <span>Interactive Map</span>
+    </div>
+    <a class="spatial-action" href="dashboard.html#webgis-reklamasi-mc">Buka WebGIS <i>↗</i></a>
+  </div>
+  <div class="spatial-visual" aria-hidden="true">
+    <div class="map-topbar">
+      <span><i></i> RECLAMATION WEBGIS</span>
+      <b>LIVE</b>
+    </div>
+    <div class="map-canvas">
+      <span class="map-contour contour-a"></span>
+      <span class="map-contour contour-b"></span>
+      <span class="map-contour contour-c"></span>
+      <span class="map-polygon polygon-a"></span>
+      <span class="map-polygon polygon-b"></span>
+      <span class="map-road road-a"></span>
+      <span class="map-road road-b"></span>
+      <span class="map-pin pin-a"><i></i></span>
+      <span class="map-pin pin-b"><i></i></span>
+      <span class="map-pin pin-c"><i></i></span>
+      <div class="map-info-card">
+        <small>AREA REKLAMASI</small>
+        <strong>Spatial Monitoring</strong>
+        <span>Lokasi · Luasan · Status · Progres</span>
+      </div>
+      <div class="map-scale"><i></i><span>0</span><span>250 m</span></div>
+    </div>
+  </div>
 </div>
 </section>
 <section class="workflow section" id="workflow">
