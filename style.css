@@ -2575,3 +2575,37 @@ html.gsap-active .hero-module-jump{
     opacity:.95;
   }
 }
+
+
+/* =========================================================
+   Equal mobile module card height — July 2026
+   ========================================================= */
+@media (max-width:560px){
+  .modules .module-grid{
+    align-items:stretch!important;
+  }
+
+  .modules .module-card,
+  .modules .module-card.large,
+  .modules .module-card.webgis-cover-card{
+    height:390px!important;
+    min-height:390px!important;
+    max-height:390px!important;
+    box-sizing:border-box!important;
+    flex:0 0 min(84vw,430px)!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+
+  .modules .module-card.webgis-cover-card .webgis-mobile-copy{
+    bottom:74px!important;
+  }
+
+  .modules .module-card.webgis-cover-card .webgis-mobile-copy p{
+    -webkit-line-clamp:2!important;
+  }
+
+  .modules .module-card.webgis-cover-card .webgis-mobile-copy small{
+    margin-top:4px!important;
+  }
+}
