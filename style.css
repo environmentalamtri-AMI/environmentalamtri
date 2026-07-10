@@ -2362,3 +2362,216 @@ html.gsap-active .hero-module-jump{
 @media (max-width:820px){
   .hero-module-slider .slider-tab span{display:none!important}
 }
+
+
+/* =========================================================
+   Mobile refinement pack — July 2026
+   - Mobile-only WebGIS cover with clean overlay
+   - Tighter coverage + CTA spacing
+   ========================================================= */
+.module-photo-mobile,
+.webgis-mobile-copy,
+.webgis-mobile-tags,
+.webgis-esri-badge{display:none}
+
+.module-card.webgis-cover-card .module-photo-desktop{display:block}
+.module-card.webgis-cover-card .module-photo-mobile{display:none}
+
+@media (max-width:560px){
+  /* tighter vertical rhythm */
+  .coverage.section{padding-top:56px!important;padding-bottom:72px!important}
+  .cta-section{padding:0 0 72px!important}
+
+  /* platform coverage compact */
+  .coverage-card{
+    padding:28px 20px!important;
+    gap:18px!important;
+    border-radius:24px!important;
+  }
+  .coverage-copy{padding-right:0!important}
+  .coverage-copy .eyebrow{font-size:10px!important;letter-spacing:.16em!important}
+  .coverage-copy h2{
+    font-size:31px!important;
+    line-height:1.04!important;
+    letter-spacing:-.045em!important;
+    margin-top:12px!important;
+  }
+  .coverage-copy p{
+    margin-top:14px!important;
+    font-size:13px!important;
+    line-height:1.65!important;
+    max-width:none!important;
+  }
+  .company-cards{gap:10px!important}
+  .company-cards article{
+    grid-template-columns:46px 1fr 20px!important;
+    gap:14px!important;
+    padding:14px!important;
+    border-radius:18px!important;
+    align-items:center!important;
+  }
+  .company-cards article>span{
+    width:46px!important;
+    height:46px!important;
+    border-radius:14px!important;
+    font-size:16px!important;
+  }
+  .company-cards small{font-size:8px!important;letter-spacing:.06em!important}
+  .company-cards h3{font-size:18px!important;line-height:1.08!important}
+  .company-cards p{font-size:10px!important;line-height:1.45!important;margin-top:4px!important;color:rgba(255,255,255,.7)!important}
+  .company-cards b{font-size:15px!important;opacity:.62!important}
+
+  /* compact final CTA */
+  .cta-shell{
+    min-height:auto!important;
+    padding:30px 22px!important;
+    gap:18px!important;
+    border-radius:24px!important;
+    align-items:flex-start!important;
+  }
+  .cta-shell>div:first-of-type{max-width:none!important}
+  .cta-shell .eyebrow{font-size:10px!important;letter-spacing:.16em!important}
+  .cta-shell h2{
+    font-size:34px!important;
+    line-height:1.02!important;
+    letter-spacing:-.05em!important;
+    margin-top:12px!important;
+  }
+  .cta-side p{
+    font-size:13px!important;
+    line-height:1.6!important;
+    margin:0 0 16px!important;
+    max-width:none!important;
+  }
+  .cta-side .btn{
+    min-height:52px!important;
+    padding:0 16px!important;
+    font-size:13px!important;
+  }
+  .cta-petals{display:none!important}
+
+  /* mobile-specific WebGIS card */
+  .module-card.webgis-cover-card{
+    min-height:390px!important;
+    padding:20px!important;
+    overflow:hidden!important;
+  }
+  .module-card.webgis-cover-card .module-photo-desktop{display:none!important}
+  .module-card.webgis-cover-card .module-photo-mobile{
+    display:block!important;
+    object-position:center center!important;
+    filter:saturate(.94) contrast(1.03) brightness(.82)!important;
+    transform:scale(1)!important;
+  }
+  .module-card.webgis-cover-card::before{
+    background:
+      linear-gradient(180deg,rgba(0,26,34,.08) 0%,rgba(0,26,34,.18) 22%,rgba(0,23,30,.48) 54%,rgba(0,22,30,.9) 100%)!important;
+  }
+  .module-card.webgis-cover-card::after{
+    background:linear-gradient(120deg,rgba(255,255,255,.08),transparent 38%)!important;
+  }
+  .module-card.webgis-cover-card .module-number{
+    top:14px!important;
+    right:14px!important;
+    width:34px!important;
+    height:34px!important;
+    min-width:34px!important;
+    padding:0!important;
+    font-size:11px!important;
+  }
+  .module-card.webgis-cover-card .module-arrow{
+    right:16px!important;
+    bottom:16px!important;
+    width:42px!important;
+    height:42px!important;
+    z-index:4!important;
+  }
+  .webgis-mobile-copy,
+  .webgis-mobile-tags,
+  .webgis-esri-badge{display:block}
+  .webgis-mobile-copy{
+    position:absolute;
+    left:18px;
+    right:18px;
+    bottom:82px;
+    z-index:4;
+    max-width:84%!important;
+    text-shadow:0 2px 18px rgba(0,0,0,.5);
+  }
+  .webgis-mobile-copy>span{
+    display:block;
+    color:#ffd39d!important;
+    font-size:9px!important;
+    font-weight:900!important;
+    letter-spacing:.16em!important;
+    margin-bottom:10px!important;
+  }
+  .webgis-mobile-copy h3{
+    margin:0 0 10px!important;
+    font-size:29px!important;
+    line-height:1.02!important;
+    color:#fff!important;
+  }
+  .webgis-mobile-copy p{
+    margin:0 0 8px!important;
+    font-size:11.5px!important;
+    line-height:1.5!important;
+    color:rgba(255,255,255,.86)!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .webgis-mobile-copy small{
+    display:block!important;
+    font-size:9px!important;
+    color:rgba(255,255,255,.72)!important;
+    letter-spacing:.02em!important;
+  }
+  .webgis-mobile-tags{
+    position:absolute;
+    left:18px;
+    top:16px;
+    display:flex!important;
+    gap:6px;
+    z-index:4;
+    max-width:72%;
+    flex-wrap:wrap;
+  }
+  .webgis-mobile-tags span{
+    padding:6px 9px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(0,35,44,.42);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    color:#eaf8f8;
+    font-size:7px;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  .webgis-esri-badge{
+    position:absolute;
+    left:18px;
+    bottom:18px;
+    z-index:4;
+    height:26px;
+    padding:0 10px;
+    border-radius:999px;
+    display:flex!important;
+    align-items:center;
+    background:rgba(0,35,44,.55);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    box-shadow:0 10px 24px rgba(0,16,22,.18);
+  }
+  .webgis-esri-badge img{
+    height:12px;
+    width:auto;
+    display:block;
+    opacity:.95;
+  }
+}
