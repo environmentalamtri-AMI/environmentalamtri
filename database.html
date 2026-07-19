@@ -9,6 +9,17 @@
   <link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
   <link href="style.css?v=20260707-3" rel="stylesheet"/>
   <link href="subpage.css?v=20260707-10" rel="stylesheet"/>
+
+<style>
+  .database-primary-action.upload-excel-action{
+    background:linear-gradient(135deg,#f47825,#ff9a36)!important;
+    box-shadow:0 12px 24px rgba(244,120,37,.18);
+  }
+  .database-primary-action.upload-excel-action:hover{
+    transform:translateY(-1px);
+    box-shadow:0 16px 30px rgba(244,120,37,.24);
+  }
+</style>
 </head>
 <body class="database-input-page">
 
@@ -36,7 +47,7 @@
         <h1>Input Database<br/>Lingkungan.</h1>
         <p>
           Akses terpusat untuk memperbarui data operasional lingkungan PT Maruwai Coal
-          dan PT Lahai Coal melalui database Google Sheets yang terhubung ke dashboard 1DEA.
+          dan PT Lahai Coal. Sebagian data diperbarui melalui Google Sheets, sedangkan bukaan lahan dan reklamasi menggunakan unggah file Excel.
         </p>
         <div class="hero-status-row database-status-row">
           <span><i></i> 9 database terhubung</span>
@@ -48,7 +59,7 @@
       <div class="sub-hero-panel database-access-panel">
         <small>AKSES DATABASE</small>
         <strong>Input Center</strong>
-        <span>Gunakan akun Google yang telah memperoleh izin edit. Setiap tombol input membuka database resmi pada tab baru.</span>
+        <span>Gunakan akun Google yang telah memperoleh izin. Tombol input membuka Google Sheets atau folder unggah Excel sesuai jenis datanya.</span>
         <div class="database-access-metrics">
           <div><b>5</b><small>KATEGORI</small></div>
           <div><b>9</b><small>DATABASE</small></div>
@@ -67,7 +78,7 @@
         </div>
         <p>
           Gunakan filter perusahaan dan kategori atau cari nama database. Data yang
-          diperbarui pada Google Sheets akan menjadi sumber visualisasi Looker Studio.
+          diperbarui melalui Google Sheets atau file Excel akan menjadi sumber visualisasi 1DEA.
         </p>
       </div>
 
@@ -131,7 +142,7 @@
           </div>
         </article>
 
-        <article class="database-input-card land-card" data-company="mc" data-search="bukaan lahan reklamasi maruwai coal mc bulanan land disturbance rehabilitation">
+        <article class="database-input-card land-card" data-company="mc" data-search="bukaan lahan reklamasi maruwai coal mc bulanan land disturbance rehabilitation upload excel file drive">
           <div class="database-card-head">
             <span class="database-card-icon land">⌁</span>
             <div>
@@ -140,17 +151,17 @@
             </div>
             <span class="database-site-badge">MC</span>
           </div>
-          <p>Perbarui luas bukaan lahan, realisasi reklamasi, rencana, kumulatif, dan persentase capaian.</p>
+          <p>Upload file Excel bukaan lahan dan reklamasi PT Maruwai Coal ke folder Drive resmi untuk diproses sistem.</p>
           <div class="database-card-meta">
-            <span>Bulanan</span><span>Google Sheets</span><span>Live source</span>
+            <span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
           </div>
           <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1TyNLdzj9do6EXRJr75la69jMsb9RHaHX8ffvS6TR_Wk" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
+            <a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1wlUq4okAXT7jWnm9DX-hxkFeb0OvgoeX?hl=ID" target="_blank" rel="noopener">Upload File Excel <b>↗</b></a>
             <a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#mc">Lihat modul</a>
           </div>
         </article>
 
-        <article class="database-input-card land-card" data-company="lc" data-search="bukaan lahan reklamasi lahai coal lc bulanan land disturbance rehabilitation">
+        <article class="database-input-card land-card" data-company="lc" data-search="bukaan lahan reklamasi lahai coal lc bulanan land disturbance rehabilitation upload excel file drive">
           <div class="database-card-head">
             <span class="database-card-icon land">⌁</span>
             <div>
@@ -159,12 +170,12 @@
             </div>
             <span class="database-site-badge lc">LC</span>
           </div>
-          <p>Perbarui data bulanan dan kumulatif bukaan lahan serta realisasi reklamasi PT Lahai Coal.</p>
+          <p>Upload file Excel bukaan lahan dan reklamasi PT Lahai Coal ke folder Drive resmi untuk diproses sistem.</p>
           <div class="database-card-meta">
-            <span>Bulanan</span><span>Google Sheets</span><span>Live source</span>
+            <span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
           </div>
           <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1aH5y4YVy1WU5RhKgewwtW716PJpLFSJ-IW02cc3PK4c" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
+            <a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1JvWLYB_3K7VHhbtq50dRMHywqQGwmtI-?hl=ID" target="_blank" rel="noopener">Upload File Excel <b>↗</b></a>
             <a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#lc">Lihat modul</a>
           </div>
         </article>
@@ -278,9 +289,9 @@
           <h2>Alur pembaruan data.</h2>
         </div>
         <ol>
-          <li><b>01</b><span><strong>Buka database</strong><small>Masuk menggunakan akun Google yang memiliki izin edit.</small></span></li>
-          <li><b>02</b><span><strong>Perbarui sheet input</strong><small>Ikuti struktur kolom dan jangan mengubah sheet sumber visualisasi.</small></span></li>
-          <li><b>03</b><span><strong>Validasi data</strong><small>Periksa tanggal, satuan, lokasi, nilai kosong, dan konsistensi angka.</small></span></li>
+          <li><b>01</b><span><strong>Pilih jenis input</strong><small>Gunakan Google Sheets untuk database rutin, atau Upload File Excel untuk Bukaan Lahan & Reklamasi.</small></span></li>
+          <li><b>02</b><span><strong>Upload file Excel</strong><small>Untuk Bukaan Lahan & Reklamasi, unggah file Excel ke folder Drive perusahaan yang sesuai.</small></span></li>
+          <li><b>03</b><span><strong>Validasi data</strong><small>Periksa periode data, satuan, lokasi, nilai kosong, dan konsistensi angka sebelum atau setelah sistem memproses file.</small></span></li>
           <li><b>04</b><span><strong>Cek dashboard</strong><small>Buka modul terkait untuk memastikan visualisasi sudah diperbarui.</small></span></li>
         </ol>
       </section>
@@ -291,7 +302,7 @@
           <strong>Keamanan dan hak akses</strong>
           <p>
             GitHub Pages hanya berfungsi sebagai portal akses. Data tetap tersimpan di Google Drive dan
-            tidak disalin ke repository publik. Hak melihat atau mengedit mengikuti pengaturan setiap Google Sheet.
+            tidak disalin ke repository publik. Hak melihat, mengedit, atau mengunggah mengikuti pengaturan Google Sheets dan folder Drive.
           </p>
         </div>
       </div>
