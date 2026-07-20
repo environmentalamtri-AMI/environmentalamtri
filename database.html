@@ -1,322 +1,307 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <meta content="#003f52" name="theme-color"/>
-  <meta name="description" content="Portal input dan pembaruan database lingkungan 1DEA untuk PT Maruwai Coal dan PT Lahai Coal."/>
-  <title>Input Database — 1DEA</title>
-  <link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
-  <link href="style.css?v=20260707-3" rel="stylesheet"/>
-  <link href="subpage.css?v=20260707-10" rel="stylesheet"/>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#003f52" name="theme-color"/>
+<meta content="Portal input dan pembaruan database lingkungan 1DEA untuk PT Maruwai Coal dan PT Lahai Coal." name="description"/>
+<title>Input Database — 1DEA</title>
+<link href="assets/alamtri-geo-mark.png" rel="icon" type="image/png"/>
+<link href="style.css?v=20260707-3" rel="stylesheet"/>
+<link href="subpage.css?v=20260707-10" rel="stylesheet"/>
 <style>
+  .database-input-card[data-input-method="excel"]{
+    border-top-color:rgba(0,95,115,.42);
+  }
   .database-primary-action.upload-excel-action{
-    background:linear-gradient(135deg,#f47825,#ff9a36)!important;
-    box-shadow:0 12px 24px rgba(244,120,37,.18);
+    background:#005f73!important;
+    box-shadow:none!important;
   }
   .database-primary-action.upload-excel-action:hover{
+    background:#004c5c!important;
     transform:translateY(-1px);
-    box-shadow:0 16px 30px rgba(244,120,37,.24);
+    box-shadow:0 12px 24px rgba(0,76,92,.14)!important;
+  }
+  .database-primary-action.upload-excel-action b{
+    font-size:14px;
+    line-height:1;
   }
 </style>
 </head>
 <body class="database-input-page">
-
 <header class="sub-header">
-  <div class="container sub-nav">
-    <a aria-label="AlamTri Geo — 1DEA" class="brand" href="index.html">
-      <span class="brand-logo-shell">
-        <img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="assets/alamtri-geo-logo.png" width="184"/>
-      </span>
-    </a>
-    <nav class="sub-nav-links">
-      <a href="dashboard.html">Dashboard</a>
-      <a href="index.html#modul">Modul</a>
-      <a class="is-current" href="database.html">Database</a>
-    </nav>
-    <a class="sub-back" href="index.html">← Beranda</a>
-  </div>
+<div class="container sub-nav">
+<a aria-label="AlamTri Geo — 1DEA" class="brand" href="index.html">
+<span class="brand-logo-shell">
+<img alt="AlamTri Geo" class="brand-logo" decoding="async" height="66" src="assets/alamtri-geo-logo.png" width="184"/>
+</span>
+</a>
+<nav class="sub-nav-links">
+<a href="dashboard.html">Dashboard</a>
+<a href="index.html#modul">Modul</a>
+<a class="is-current" href="database.html">Database</a>
+</nav>
+<a class="sub-back" href="index.html">← Beranda</a>
+</div>
 </header>
-
 <main class="sub-main database-main">
-  <section class="sub-hero database-hero">
-    <div class="container sub-hero-grid">
-      <div>
-        <span class="sub-pill">Environmental Data Input</span>
-        <h1>Input Database<br/>Lingkungan.</h1>
-        <p>
+<section class="sub-hero database-hero">
+<div class="container sub-hero-grid">
+<div>
+<span class="sub-pill">Environmental Data Input</span>
+<h1>Input Database<br/>Lingkungan.</h1>
+<p>
           Akses terpusat untuk memperbarui data operasional lingkungan PT Maruwai Coal
           dan PT Lahai Coal. Sebagian data diperbarui melalui Google Sheets, sedangkan bukaan lahan dan reklamasi menggunakan unggah file Excel.
         </p>
-        <div class="hero-status-row database-status-row">
-          <span><i></i> 9 database terhubung</span>
-          <span>2 perusahaan</span>
-          <span>Google Workspace</span>
-        </div>
-      </div>
-
-      <div class="sub-hero-panel database-access-panel">
-        <small>AKSES DATABASE</small>
-        <strong>Input Center</strong>
-        <span>Gunakan akun Google yang telah memperoleh izin. Tombol input membuka Google Sheets atau folder unggah Excel sesuai jenis datanya.</span>
-        <div class="database-access-metrics">
-          <div><b>5</b><small>KATEGORI</small></div>
-          <div><b>9</b><small>DATABASE</small></div>
-          <div><b>2</b><small>SITE</small></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="database-workspace">
-    <div class="container">
-      <div class="database-intro">
-        <div>
-          <span class="dashboard-eyebrow">DATABASE DIRECTORY</span>
-          <h2>Pilih database yang ingin diperbarui.</h2>
-        </div>
-        <p>
+<div class="hero-status-row database-status-row">
+<span><i></i> 9 database terhubung</span>
+<span>2 perusahaan</span>
+<span>Google Workspace</span>
+</div>
+</div>
+<div class="sub-hero-panel database-access-panel">
+<small>AKSES DATABASE</small>
+<strong>Input Center</strong>
+<span>Gunakan akun Google yang telah memperoleh izin. Tombol input membuka Google Sheets atau folder unggah Excel sesuai jenis datanya.</span>
+<div class="database-access-metrics">
+<div><b>5</b><small>KATEGORI</small></div>
+<div><b>9</b><small>DATABASE</small></div>
+<div><b>2</b><small>SITE</small></div>
+</div>
+</div>
+</div>
+</section>
+<section class="database-workspace">
+<div class="container">
+<div class="database-intro">
+<div>
+<span class="dashboard-eyebrow">DATABASE DIRECTORY</span>
+<h2>Pilih database yang ingin diperbarui.</h2>
+</div>
+<p>
           Gunakan filter perusahaan dan kategori atau cari nama database. Data yang
           diperbarui melalui Google Sheets atau file Excel akan menjadi sumber visualisasi 1DEA.
         </p>
-      </div>
+</div>
+<div aria-label="Filter database" class="database-commandbar">
+<label class="database-search">
+<span aria-hidden="true">⌕</span>
+<input autocomplete="off" id="databaseSearch" placeholder="Cari database, kategori, atau perusahaan…" type="search"/>
+<kbd>Ctrl K</kbd>
+</label>
+<div aria-label="Filter perusahaan" class="database-filters" role="group">
+<button class="database-filter is-active" data-filter="all" type="button">Semua</button>
+<button class="database-filter" data-filter="mc" type="button">PT MC</button>
+<button class="database-filter" data-filter="lc" type="button">PT LC</button>
+<button class="database-filter" data-filter="ami" type="button">AMI</button>
+</div>
+</div>
+<div class="database-summary-line">
+<span id="databaseResultCount">9 database ditampilkan</span>
+<span class="database-security"><i></i> Hak akses mengikuti Google Drive</span>
+</div>
+<div class="database-input-grid" id="databaseGrid">
 
-      <div class="database-commandbar" aria-label="Filter database">
-        <label class="database-search">
-          <span aria-hidden="true">⌕</span>
-          <input id="databaseSearch" type="search" placeholder="Cari database, kategori, atau perusahaan…" autocomplete="off"/>
-          <kbd>Ctrl K</kbd>
-        </label>
 
-        <div class="database-filters" role="group" aria-label="Filter perusahaan">
-          <button class="database-filter is-active" type="button" data-filter="all">Semua</button>
-          <button class="database-filter" type="button" data-filter="mc">PT MC</button>
-          <button class="database-filter" type="button" data-filter="lc">PT LC</button>
-          <button class="database-filter" type="button" data-filter="ami">AMI</button>
-        </div>
-      </div>
 
-      <div class="database-summary-line">
-        <span id="databaseResultCount">9 database ditampilkan</span>
-        <span class="database-security"><i></i> Hak akses mengikuti Google Drive</span>
-      </div>
 
-      <div class="database-input-grid" id="databaseGrid">
 
-        <article class="database-input-card water-card" data-company="mc" data-search="kualitas air settling pond sp monitoring maruwai coal mc harian debit ph tss">
-          <div class="database-card-head">
-            <span class="database-card-icon water">≈</span>
-            <div>
-              <small>WATER MANAGEMENT</small>
-              <h3>SP Monitoring PT Maruwai Coal</h3>
-            </div>
-            <span class="database-site-badge">MC</span>
-          </div>
-          <p>Input harian parameter pH, TSS, debit, curah hujan, dan data pendukung settling pond.</p>
-          <div class="database-card-meta">
-            <span>Harian</span><span>Google Sheets</span><span>Live source</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1JGvW1y36TtrDiY0KiUOeyxtVbREydW8xHMjiG5vsbRE" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/air-asam-tambang.html#mc">Lihat modul</a>
-          </div>
-        </article>
 
-        <article class="database-input-card water-card" data-company="lc" data-search="kualitas air settling pond sp monitoring lahai coal lc harian debit ph tss">
-          <div class="database-card-head">
-            <span class="database-card-icon water">≈</span>
-            <div>
-              <small>WATER MANAGEMENT</small>
-              <h3>SP Monitoring PT Lahai Coal</h3>
-            </div>
-            <span class="database-site-badge lc">LC</span>
-          </div>
-          <p>Input harian kualitas air, debit, curah hujan, dan kinerja compliance point PT Lahai Coal.</p>
-          <div class="database-card-meta">
-            <span>Harian</span><span>Google Sheets</span><span>Live source</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1tHRvWbYTPZNKAbHW4nsI7ITN_2ZgKUVMU9cLWlohi_s" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/air-asam-tambang.html#lc">Lihat modul</a>
-          </div>
-        </article>
 
-        <article class="database-input-card land-card" data-company="mc" data-search="bukaan lahan reklamasi maruwai coal mc bulanan land disturbance rehabilitation upload excel file drive">
-          <div class="database-card-head">
-            <span class="database-card-icon land">⌁</span>
-            <div>
-              <small>LAND MANAGEMENT</small>
-              <h3>Bukaan Lahan & Reklamasi PT MC</h3>
-            </div>
-            <span class="database-site-badge">MC</span>
-          </div>
-          <p>Upload file Excel bukaan lahan dan reklamasi PT Maruwai Coal ke folder Drive resmi untuk diproses sistem.</p>
-          <div class="database-card-meta">
-            <span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1wlUq4okAXT7jWnm9DX-hxkFeb0OvgoeX?hl=ID" target="_blank" rel="noopener">Upload File Excel <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#mc">Lihat modul</a>
-          </div>
-        </article>
 
-        <article class="database-input-card land-card" data-company="lc" data-search="bukaan lahan reklamasi lahai coal lc bulanan land disturbance rehabilitation upload excel file drive">
-          <div class="database-card-head">
-            <span class="database-card-icon land">⌁</span>
-            <div>
-              <small>LAND MANAGEMENT</small>
-              <h3>Bukaan Lahan & Reklamasi PT LC</h3>
-            </div>
-            <span class="database-site-badge lc">LC</span>
-          </div>
-          <p>Upload file Excel bukaan lahan dan reklamasi PT Lahai Coal ke folder Drive resmi untuk diproses sistem.</p>
-          <div class="database-card-meta">
-            <span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1JvWLYB_3K7VHhbtq50dRMHywqQGwmtI-?hl=ID" target="_blank" rel="noopener">Upload File Excel <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#lc">Lihat modul</a>
-          </div>
-        </article>
 
-        <article class="database-input-card waste-card" data-company="mc" data-search="limbah b3 lb3 maruwai coal mc tps neraca logbook pengelolaan">
-          <div class="database-card-head">
-            <span class="database-card-icon waste">◇</span>
-            <div>
-              <small>HAZARDOUS WASTE</small>
-              <h3>Pengelolaan LB3 PT Maruwai Coal</h3>
-            </div>
-            <span class="database-site-badge">MC</span>
-          </div>
-          <p>Input limbah masuk, penyimpanan, limbah keluar, bukti dokumen, sisa TPS, dan status ketaatan.</p>
-          <div class="database-card-meta">
-            <span>Bulanan</span><span>Google Sheets</span><span>Compliance</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1zT2o2CZyEesOxer2EQOknWgApIP_9xkyu9ZmJjDaxZM" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/limbah-b3.html#mc">Lihat modul</a>
-          </div>
-        </article>
-
-        <article class="database-input-card waste-card" data-company="lc" data-search="limbah b3 lb3 lahai coal lc tps neraca logbook pengelolaan">
-          <div class="database-card-head">
-            <span class="database-card-icon waste">◇</span>
-            <div>
-              <small>HAZARDOUS WASTE</small>
-              <h3>Pengelolaan LB3 PT Lahai Coal</h3>
-            </div>
-            <span class="database-site-badge lc">LC</span>
-          </div>
-          <p>Input neraca LB3, masa penyimpanan, pengangkutan, bukti dokumen, dan status kepatuhan PT LC.</p>
-          <div class="database-card-meta">
-            <span>Bulanan</span><span>Google Sheets</span><span>Compliance</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1D_lF42xmV84yTACz0NHxhgAOvRBVhyUAQ67q2judNNE" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/limbah-b3.html#lc">Lihat modul</a>
-          </div>
-        </article>
-
-        <article class="database-input-card nursery-card" data-company="mc" data-search="nursery pembibitan maruwai coal mc bibit pioner lokal mpts mati aklimatisasi">
-          <div class="database-card-head">
-            <span class="database-card-icon nursery">♧</span>
-            <div>
-              <small>RECLAMATION SUPPORT</small>
-              <h3>Pembibitan PT Maruwai Coal</h3>
-            </div>
-            <span class="database-site-badge">MC</span>
-          </div>
-          <p>Perbarui rencana dan realisasi produksi bibit, jenis bibit, aklimatisasi, kematian, dan capaian YTD.</p>
-          <div class="database-card-meta">
-            <span>Bulanan</span><span>Google Sheets</span><span>Nursery</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1hLovD73EZQL00FhcJrZec0cz4ChXot-cFVZG_moCyic" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/nursery.html">Lihat modul</a>
-          </div>
-        </article>
-
-        <article class="database-input-card incident-card" data-company="ami" data-search="insiden lingkungan ami incident kejadian volume area klasifikasi status tindak lanjut">
-          <div class="database-card-head">
-            <span class="database-card-icon incident">!</span>
-            <div>
-              <small>ENVIRONMENTAL INCIDENT</small>
-              <h3>Insiden Lingkungan AMI</h3>
-            </div>
-            <span class="database-site-badge ami">AMI</span>
-          </div>
-          <p>Input tanggal, deskripsi kejadian, volume, area terdampak, klasifikasi, status, dan tindak lanjut.</p>
-          <div class="database-card-meta">
-            <span>Event-based</span><span>Google Sheets</span><span>Integrated</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1vCWmeLS8d1wEgE44Wg7iJo8rzt0NlyilXoQPNYhBZY0" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/insiden-lingkungan.html">Lihat modul</a>
-          </div>
-        </article>
-
-        <article class="database-input-card ndvi-card" data-company="mc" data-search="ndvi reklamasi maruwai coal mc vegetasi drone citra triwulan kesehatan vegetasi">
-          <div class="database-card-head">
-            <span class="database-card-icon ndvi">▦</span>
-            <div>
-              <small>SPATIAL MONITORING</small>
-              <h3>Database NDVI PT Maruwai Coal</h3>
-            </div>
-            <span class="database-site-badge">MC</span>
-          </div>
-          <p>Perbarui statistik NDVI per tahun tanam, kelas vegetasi, kesehatan tanaman, luas, dan persentase.</p>
-          <div class="database-card-meta">
-            <span>Triwulanan</span><span>Google Sheets</span><span>Spatial data</span>
-          </div>
-          <div class="database-card-actions">
-            <a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1gF6BlRfsKtY0qjHcycTR4_3xWp6yzn_eFYuCqPAqpCE" target="_blank" rel="noopener">Input / Update Data <b>↗</b></a>
-            <a class="database-secondary-action" href="modules/ndvi-reklamasi.html">Lihat modul</a>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="database-empty-state" id="databaseEmpty" hidden>
-        <span>⌕</span>
-        <h3>Database tidak ditemukan</h3>
-        <p>Coba gunakan kata kunci atau filter perusahaan yang berbeda.</p>
-      </div>
-
-      <section class="database-guidance">
-        <div>
-          <span class="dashboard-eyebrow">INPUT GUIDANCE</span>
-          <h2>Alur pembaruan data.</h2>
-        </div>
-        <ol>
-          <li><b>01</b><span><strong>Pilih jenis input</strong><small>Gunakan Google Sheets untuk database rutin, atau Upload File Excel untuk Bukaan Lahan & Reklamasi.</small></span></li>
-          <li><b>02</b><span><strong>Upload file Excel</strong><small>Untuk Bukaan Lahan & Reklamasi, unggah file Excel ke folder Drive perusahaan yang sesuai.</small></span></li>
-          <li><b>03</b><span><strong>Validasi data</strong><small>Periksa periode data, satuan, lokasi, nilai kosong, dan konsistensi angka sebelum atau setelah sistem memproses file.</small></span></li>
-          <li><b>04</b><span><strong>Cek dashboard</strong><small>Buka modul terkait untuk memastikan visualisasi sudah diperbarui.</small></span></li>
-        </ol>
-      </section>
-
-      <div class="database-notice">
-        <div class="database-notice-icon">i</div>
-        <div>
-          <strong>Keamanan dan hak akses</strong>
-          <p>
+<article class="database-input-card water-card" data-company="mc" data-search="kualitas air settling pond sp monitoring maruwai coal mc harian debit ph tss">
+<div class="database-card-head">
+<span class="database-card-icon water">≈</span>
+<div>
+<small>WATER MANAGEMENT</small>
+<h3>SP Monitoring PT Maruwai Coal</h3>
+</div>
+<span class="database-site-badge">MC</span>
+</div>
+<p>Input harian parameter pH, TSS, debit, curah hujan, dan data pendukung settling pond.</p>
+<div class="database-card-meta">
+<span>Harian</span><span>Google Sheets</span><span>Live source</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1JGvW1y36TtrDiY0KiUOeyxtVbREydW8xHMjiG5vsbRE" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/air-asam-tambang.html#mc">Lihat modul</a>
+</div>
+</article><article class="database-input-card water-card" data-company="lc" data-search="kualitas air settling pond sp monitoring lahai coal lc harian debit ph tss">
+<div class="database-card-head">
+<span class="database-card-icon water">≈</span>
+<div>
+<small>WATER MANAGEMENT</small>
+<h3>SP Monitoring PT Lahai Coal</h3>
+</div>
+<span class="database-site-badge lc">LC</span>
+</div>
+<p>Input harian kualitas air, debit, curah hujan, dan kinerja compliance point PT Lahai Coal.</p>
+<div class="database-card-meta">
+<span>Harian</span><span>Google Sheets</span><span>Live source</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1tHRvWbYTPZNKAbHW4nsI7ITN_2ZgKUVMU9cLWlohi_s" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/air-asam-tambang.html#lc">Lihat modul</a>
+</div>
+</article><article class="database-input-card ndvi-card" data-company="mc" data-search="ndvi reklamasi maruwai coal mc vegetasi drone citra triwulan kesehatan vegetasi">
+<div class="database-card-head">
+<span class="database-card-icon ndvi">▦</span>
+<div>
+<small>SPATIAL MONITORING</small>
+<h3>Database NDVI PT Maruwai Coal</h3>
+</div>
+<span class="database-site-badge">MC</span>
+</div>
+<p>Perbarui statistik NDVI per tahun tanam, kelas vegetasi, kesehatan tanaman, luas, dan persentase.</p>
+<div class="database-card-meta">
+<span>Triwulanan</span><span>Google Sheets</span><span>Spatial data</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1gF6BlRfsKtY0qjHcycTR4_3xWp6yzn_eFYuCqPAqpCE" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/ndvi-reklamasi.html">Lihat modul</a>
+</div>
+</article><article class="database-input-card land-card" data-company="mc" data-input-method="excel" data-search="bukaan lahan reklamasi maruwai coal mc bulanan land disturbance rehabilitation upload excel file drive">
+<div class="database-card-head">
+<span class="database-card-icon land">⌁</span>
+<div>
+<small>LAND MANAGEMENT</small>
+<h3>Bukaan Lahan &amp; Reklamasi PT MC</h3>
+</div>
+<span class="database-site-badge">MC</span>
+</div>
+<p>Upload file Excel bukaan lahan dan reklamasi PT Maruwai Coal ke folder Drive resmi untuk diproses sistem.</p>
+<div class="database-card-meta">
+<span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1wlUq4okAXT7jWnm9DX-hxkFeb0OvgoeX?hl=ID" rel="noopener" target="_blank">Upload File Excel <b>⇧</b></a>
+<a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#mc">Lihat modul</a>
+</div>
+</article><article class="database-input-card land-card" data-company="lc" data-input-method="excel" data-search="bukaan lahan reklamasi lahai coal lc bulanan land disturbance rehabilitation upload excel file drive">
+<div class="database-card-head">
+<span class="database-card-icon land">⌁</span>
+<div>
+<small>LAND MANAGEMENT</small>
+<h3>Bukaan Lahan &amp; Reklamasi PT LC</h3>
+</div>
+<span class="database-site-badge lc">LC</span>
+</div>
+<p>Upload file Excel bukaan lahan dan reklamasi PT Lahai Coal ke folder Drive resmi untuk diproses sistem.</p>
+<div class="database-card-meta">
+<span>Bulanan</span><span>Excel Upload</span><span>Google Drive</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action upload-excel-action" href="https://drive.google.com/drive/folders/1JvWLYB_3K7VHhbtq50dRMHywqQGwmtI-?hl=ID" rel="noopener" target="_blank">Upload File Excel <b>⇧</b></a>
+<a class="database-secondary-action" href="modules/bukaan-lahan-reklamasi.html#lc">Lihat modul</a>
+</div>
+</article><article class="database-input-card nursery-card" data-company="mc" data-search="nursery pembibitan maruwai coal mc bibit pioner lokal mpts mati aklimatisasi">
+<div class="database-card-head">
+<span class="database-card-icon nursery">♧</span>
+<div>
+<small>RECLAMATION SUPPORT</small>
+<h3>Pembibitan PT Maruwai Coal</h3>
+</div>
+<span class="database-site-badge">MC</span>
+</div>
+<p>Perbarui rencana dan realisasi produksi bibit, jenis bibit, aklimatisasi, kematian, dan capaian YTD.</p>
+<div class="database-card-meta">
+<span>Bulanan</span><span>Google Sheets</span><span>Nursery</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1hLovD73EZQL00FhcJrZec0cz4ChXot-cFVZG_moCyic" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/nursery.html">Lihat modul</a>
+</div>
+</article><article class="database-input-card waste-card" data-company="mc" data-search="limbah b3 lb3 maruwai coal mc tps neraca logbook pengelolaan">
+<div class="database-card-head">
+<span class="database-card-icon waste">◇</span>
+<div>
+<small>HAZARDOUS WASTE</small>
+<h3>Pengelolaan LB3 PT Maruwai Coal</h3>
+</div>
+<span class="database-site-badge">MC</span>
+</div>
+<p>Input limbah masuk, penyimpanan, limbah keluar, bukti dokumen, sisa TPS, dan status ketaatan.</p>
+<div class="database-card-meta">
+<span>Bulanan</span><span>Google Sheets</span><span>Compliance</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1zT2o2CZyEesOxer2EQOknWgApIP_9xkyu9ZmJjDaxZM" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/limbah-b3.html#mc">Lihat modul</a>
+</div>
+</article><article class="database-input-card waste-card" data-company="lc" data-search="limbah b3 lb3 lahai coal lc tps neraca logbook pengelolaan">
+<div class="database-card-head">
+<span class="database-card-icon waste">◇</span>
+<div>
+<small>HAZARDOUS WASTE</small>
+<h3>Pengelolaan LB3 PT Lahai Coal</h3>
+</div>
+<span class="database-site-badge lc">LC</span>
+</div>
+<p>Input neraca LB3, masa penyimpanan, pengangkutan, bukti dokumen, dan status kepatuhan PT LC.</p>
+<div class="database-card-meta">
+<span>Bulanan</span><span>Google Sheets</span><span>Compliance</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1D_lF42xmV84yTACz0NHxhgAOvRBVhyUAQ67q2judNNE" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/limbah-b3.html#lc">Lihat modul</a>
+</div>
+</article><article class="database-input-card incident-card" data-company="ami" data-search="insiden lingkungan ami incident kejadian volume area klasifikasi status tindak lanjut">
+<div class="database-card-head">
+<span class="database-card-icon incident">!</span>
+<div>
+<small>ENVIRONMENTAL INCIDENT</small>
+<h3>Insiden Lingkungan AMI</h3>
+</div>
+<span class="database-site-badge ami">AMI</span>
+</div>
+<p>Input tanggal, deskripsi kejadian, volume, area terdampak, klasifikasi, status, dan tindak lanjut.</p>
+<div class="database-card-meta">
+<span>Event-based</span><span>Google Sheets</span><span>Integrated</span>
+</div>
+<div class="database-card-actions">
+<a class="database-primary-action" href="https://docs.google.com/spreadsheets/d/1vCWmeLS8d1wEgE44Wg7iJo8rzt0NlyilXoQPNYhBZY0" rel="noopener" target="_blank">Input / Update Data <b>↗</b></a>
+<a class="database-secondary-action" href="modules/insiden-lingkungan.html">Lihat modul</a>
+</div>
+</article></div>
+<div class="database-empty-state" hidden="" id="databaseEmpty">
+<span>⌕</span>
+<h3>Database tidak ditemukan</h3>
+<p>Coba gunakan kata kunci atau filter perusahaan yang berbeda.</p>
+</div>
+<section class="database-guidance">
+<div>
+<span class="dashboard-eyebrow">INPUT GUIDANCE</span>
+<h2>Alur pembaruan data.</h2>
+</div>
+<ol>
+<li><b>01</b><span><strong>Pilih jenis input</strong><small>Gunakan Google Sheets untuk database rutin, atau Upload File Excel untuk Bukaan Lahan &amp; Reklamasi.</small></span></li>
+<li><b>02</b><span><strong>Upload file Excel</strong><small>Untuk Bukaan Lahan &amp; Reklamasi, unggah file Excel ke folder Drive perusahaan yang sesuai.</small></span></li>
+<li><b>03</b><span><strong>Validasi data</strong><small>Periksa periode data, satuan, lokasi, nilai kosong, dan konsistensi angka sebelum atau setelah sistem memproses file.</small></span></li>
+<li><b>04</b><span><strong>Cek dashboard</strong><small>Buka modul terkait untuk memastikan visualisasi sudah diperbarui.</small></span></li>
+</ol>
+</section>
+<div class="database-notice">
+<div class="database-notice-icon">i</div>
+<div>
+<strong>Keamanan dan hak akses</strong>
+<p>
             GitHub Pages hanya berfungsi sebagai portal akses. Data tetap tersimpan di Google Drive dan
             tidak disalin ke repository publik. Hak melihat, mengedit, atau mengunggah mengikuti pengaturan Google Sheets dan folder Drive.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
+</div>
+</div>
+</section>
 </main>
-
 <footer class="sub-footer">
-  <div class="container">
-    <span>© 2026 1DEA</span>
-    <span>Environmental Database Input Center</span>
-  </div>
+<div class="container">
+<span>© 2026 1DEA</span>
+<span>Environmental Database Input Center</span>
+</div>
 </footer>
-
 <script src="database.js?v=20260707-1"></script>
 </body>
 </html>
